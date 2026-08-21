@@ -277,6 +277,8 @@ main { min-height: 60vh; }
 .not-found > div { display: flex; gap: 10px; margin-block-start: 20px; }
 .not-found .primary-action { width: auto; }
 
+.choice-note { margin: 10px 0 0; color: var(--ink-soft); font-size: 12px; }
+
 .process-steps { margin-block-start: 72px; }
 .process-steps h2 { margin: 0 0 22px; font-size: 26px; font-weight: 300; }
 .process-steps ol { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--rule); }

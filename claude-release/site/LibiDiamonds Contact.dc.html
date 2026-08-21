@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #1A2529; }
+  * { box-sizing: border-box; }
+  a { color: #795D26; text-decoration: none; }
+  a:hover { color: #141A1D; }
+  ::selection { background: #C9A96A; color: #141A1D; }
+  .lb-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+  .lb-scroll::-webkit-scrollbar { display: none; }
+</style>
+</helmet>
+
+<div dir="rtl" lang="he" style="font-family: Heebo, system-ui, sans-serif; min-height: 100vh; display: flex; justify-content: center; background: #1A2529;">
+  <div style="width: 393px; max-width: 100%; background: #F0F2F3; color: #141A1D; position: relative; overflow: clip; overflow-clip-margin: 0px;">
+
+    <div style="background: #141A1D; color: #C9A96A; font-size: 10.5px; letter-spacing: 0.03em; text-align: center; padding: 9px 16px;">תעודת <span dir="ltr" style="unicode-bidi: isolate;">GIA</span> או <span dir="ltr" style="unicode-bidi: isolate;">IGI</span> לכל אבן</div>
+
+    <header style="position: sticky; top: 0; z-index: 40; background: rgba(239,242,242,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(20,26,29,0.10); display: grid; grid-template-columns: 44px 1fr auto; align-items: center; height: 58px; padding: 0 12px 0 10px;">
+      <button type="button" aria-label="תפריט" style="width: 44px; height: 44px; display: grid; place-items: center; background: none; border: 0; padding: 0; cursor: pointer;">
+        <span style="display: block; width: 20px; height: 1px; background: #141A1D; box-shadow: 0 6px 0 #141A1D, 0 -6px 0 #141A1D;"></span>
+      </button>
+      <a href="LibiDiamonds Mobile Home v2.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 3px; color: #141A1D;">
+        <span style="font-size: 19px; font-weight: 300; letter-spacing: 0.02em; line-height: 1;">ליבי</span>
+        <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.34em; color: #697175; line-height: 1;">DIAMONDS</span>
+      </a>
+      <a href="tel:0508611888" style="min-width: 44px; height: 44px; display: flex; align-items: center; justify-content: flex-end; color: #141A1D; font-size: 13px;">שיחה</a>
+    </header>
+
+    <section style="padding: 30px 22px 26px;">
+      <h1 style="font-size: 34px; font-weight: 200; line-height: 1.14; letter-spacing: -0.025em; margin: 0 0 14px;">יצירת קשר</h1>
+      <div style="width: 46px; height: 1px; background: #C9A96A; margin-bottom: 16px;"></div>
+      <p style="font-size: 16.5px; font-weight: 300; line-height: 1.62; color: #454E52; margin: 0 0 24px; text-wrap: pretty;">בוואטסאפ, בטלפון, או במילוי הפרטים כאן.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="https://wa.me/972508611888" style="display: flex; align-items: center; justify-content: center; height: 54px; background: #141A1D; color: #F0F2F3; font-size: 15.5px; letter-spacing: 0.02em;">וואטסאפ</a>
+        <a href="tel:0508611888" style="display: flex; align-items: center; justify-content: center; height: 54px; border: 1px solid rgba(20,26,29,0.28); color: #141A1D; font-size: 15.5px;">
+          <span dir="ltr" style="unicode-bidi: isolate;">050-8611888</span>
+        </a>
+      </div>
+    </section>
+
+    <section style="background: #E5E9EB; padding: 28px 22px 30px;">
+      <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.05em; color: #795D26; margin-bottom: 18px;">פרטים</div>
+
+      <label for="c-name" style="display: block; font-size: 13px; color: #454E52; margin-bottom: 7px;">שם</label>
+      <input type="text" id="c-name" name="name" autocomplete="name" value="{{ name }}" onInput="{{ onName }}" style="width: 100%; height: 50px; border: 1px solid rgba(20,26,29,0.20); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 16px; padding: 0 14px; margin-bottom: 18px;" />
+
+      <label for="c-phone" style="display: block; font-size: 13px; color: #454E52; margin-bottom: 7px;">טלפון</label>
+      <input type="tel" id="c-phone" name="phone" autocomplete="tel" dir="ltr" inputmode="tel" value="{{ phone }}" onInput="{{ onPhone }}" style="width: 100%; height: 50px; border: 1px solid rgba(20,26,29,0.20); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 16px; padding: 0 14px; margin-bottom: 18px; text-align: right;" />
+
+      <label for="c-note" style="display: block; font-size: 13px; color: #454E52; margin-bottom: 7px;">מה מחפשים</label>
+      <textarea id="c-note" name="note" rows="3" value="{{ note }}" onInput="{{ onNote }}" style="width: 100%; border: 1px solid rgba(20,26,29,0.20); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 16px; line-height: 1.55; padding: 13px 14px; margin-bottom: 20px; resize: none;"></textarea>
+
+      <div id="c-budget-label" style="font-size: 13px; color: #454E52; margin-bottom: 10px;">תקציב</div>
+      <div role="group" aria-labelledby="c-budget-label" data-group="budget" onClick="{{ pick }}" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 24px;">
+        <button type="button" data-group="budget" data-value="עד ₪10,000" dir="ltr" style="unicode-bidi: isolate; min-height: 48px; border: 1px solid rgba(20,26,29,0.18); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">עד ₪10,000</button>
+        <button type="button" data-group="budget" data-value="₪10,000–20,000" dir="ltr" style="unicode-bidi: isolate; min-height: 48px; border: 1px solid rgba(20,26,29,0.18); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">₪10,000–20,000</button>
+        <button type="button" data-group="budget" data-value="₪20,000–40,000" dir="ltr" style="unicode-bidi: isolate; min-height: 48px; border: 1px solid rgba(20,26,29,0.18); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">₪20,000–40,000</button>
+        <button type="button" data-group="budget" data-value="₪40,000 ומעלה" dir="ltr" style="unicode-bidi: isolate; min-height: 48px; border: 1px solid rgba(20,26,29,0.18); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">₪40,000+</button>
+      </div>
+
+      <a href="{{ waHref }}" style="display: flex; align-items: center; justify-content: center; height: 54px; background: #C9A96A; color: #141A1D; font-size: 15.5px; font-weight: 500;">לשליחה בוואטסאפ</a>
+      <div style="font-size: 12px; color: #535C60; padding-top: 10px;">הפרטים נפתחים כהודעה מוכנה בוואטסאפ, לפני השליחה.</div>
+    </section>
+
+    <section style="padding: 30px 22px 34px;">
+      <h2 style="font-size: 23px; font-weight: 300; letter-spacing: -0.015em; margin: 0 0 20px;">מה קורה אחרי שפונים</h2>
+      <div style="display: flex; flex-direction: column; border-top: 1px solid rgba(20,26,29,0.14);">
+        <div style="padding: 16px 0; border-bottom: 1px solid rgba(20,26,29,0.10);">
+          <div style="font-size: 16px; margin-bottom: 5px;">שיחה</div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.6; color: #454E52;">מה מחפשים, לאיזה תקציב, ולאיזה תאריך.</div>
+        </div>
+        <div style="padding: 16px 0; border-bottom: 1px solid rgba(20,26,29,0.10);">
+          <div style="font-size: 16px; margin-bottom: 5px;">אבן ותעודה</div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.6; color: #454E52;">תמונות ווידאו של האבן, ומספר התעודה לבדיקה באתר המעבדה.</div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div style="font-size: 16px; margin-bottom: 5px;">מסירה</div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.6; color: #454E52;">משלוח מבוטח בכל הארץ, בתיאום מראש.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background: #0B0E10; color: rgba(239,242,242,0.7); padding: 32px 22px 26px;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 3px; margin-bottom: 22px;">
+        <span style="font-size: 19px; font-weight: 300; color: #F0F2F3;">ליבי</span>
+        <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.34em; color: #C9A96A;">DIAMONDS</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; font-size: 14px; font-weight: 300; padding-bottom: 18px; border-bottom: 1px solid rgba(239,242,242,0.12);">
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">מדריך היהלומים</a>
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">חיפוש יהלום</a>
+        <a href="LibiDiamonds FAQ.dc.html" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">שאלות נפוצות</a>
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">הסיפור שלנו</a>
+        <a href="LibiDiamonds Contact.dc.html" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">יצירת קשר</a>
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">משלוח והחזרות</a>
+      </div>
+      <div style="padding: 14px 0 0;">
+        <a href="tel:0508611888" dir="ltr" style="unicode-bidi: isolate; display: flex; align-items: center; justify-content: flex-end; min-height: 44px; color: #C9A96A; font-size: 17px; letter-spacing: 0.03em;">050-8611888</a>
+        <div style="font-size: 12.5px; color: rgba(239,242,242,0.55); text-align: start;">ייעוץ אישי בטלפון</div>
+        <a href="https://wa.me/972508611888" style="min-height: 44px; display: inline-flex; align-items: center; color: #C9A96A; font-size: 14px;"><span style="border-bottom: 1px solid rgba(201,169,106,0.42); padding-bottom: 3px;">או בוואטסאפ</span></a>
+      </div>
+      <div style="padding-top: 10px; display: flex; gap: 18px; font-size: 12.5px;">
+        <a href="#" style="color: rgba(239,242,242,0.68); min-height: 44px; display: flex; align-items: center;">הצהרת נגישות</a>
+        <a href="#" style="color: rgba(239,242,242,0.68); min-height: 44px; display: flex; align-items: center;">תקנון</a>
+        <a href="#" style="color: rgba(239,242,242,0.68); min-height: 44px; display: flex; align-items: center;">פרטיות</a>
+      </div>
+    </footer>
+
+    <div style="position: sticky; bottom: 0; z-index: 50; display: grid; grid-template-columns: 1fr 1fr; background: #141A1D; border-top: 1px solid rgba(201,169,106,0.28); padding-bottom: env(safe-area-inset-bottom);">
+      <a href="https://wa.me/972508611888" style="height: 56px; display: flex; align-items: center; justify-content: center; color: #141A1D; background: #C9A96A; font-size: 15.5px; font-weight: 500; letter-spacing: 0.01em;">וואטסאפ</a>
+      <a href="tel:0508611888" style="height: 56px; display: flex; align-items: center; justify-content: center; color: #F0F2F3; font-size: 15px;">
+        <span dir="ltr" style="unicode-bidi: isolate;">050-8611888</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:393,&quot;height&quot;:880}}">
+const SEL = { background: '#141A1D', color: '#F0F2F3', borderColor: '#141A1D' };
+const IDLE = { background: '#F9FAFA', color: '#141A1D', borderColor: 'rgba(20,26,29,0.18)' };
+
+class Component extends DCLogic {
+  state = { name: '', phone: '', note: '', budget: '' };
+
+  componentDidMount() { this.sync(); }
+  componentDidUpdate() { this.sync(); }
+
+  sync() {
+    document.querySelectorAll('button[data-group][data-value]').forEach(el => {
+      const on = this.state[el.dataset.group] === el.dataset.value;
+      const s = on ? SEL : IDLE;
+      el.style.background = s.background;
+      el.style.color = s.color;
+      el.style.borderColor = s.borderColor;
+      el.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
+  renderVals() {
+    const { name, phone, note, budget } = this.state;
+    const lines = ['שלום, הגעתי מהאתר.'];
+    if (name) lines.push('שם: ' + name);
+    if (phone) lines.push('טלפון: ' + phone);
+    if (note) lines.push('מחפש/ת: ' + note);
+    if (budget) lines.push('תקציב: ' + budget);
+    return {
+      name, phone, note,
+      waHref: 'https://wa.me/972508611888?text=' + encodeURIComponent(lines.join('\n')),
+      onName: e => this.setState({ name: e.target.value }),
+      onPhone: e => this.setState({ phone: e.target.value }),
+      onNote: e => this.setState({ note: e.target.value }),
+      pick: e => {
+        const btn = e.target.closest('button[data-group][data-value]');
+        if (!btn) return;
+        const g = btn.dataset.group, v = btn.dataset.value;
+        this.setState({ [g]: this.state[g] === v ? '' : v });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

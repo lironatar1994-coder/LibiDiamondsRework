@@ -1,0 +1,1 @@
+export function InfoPage({ title, updated, sections }: { title: string; updated: string; sections: { title: string; body: string }[] }) { return <article className="info-page"><header><h1>{title}</h1><p>{updated}</p></header><div>{sections.map((section) => <section key={section.title}><h2>{section.title}</h2><p>{section.body}</p></section>)}</div></article>; }

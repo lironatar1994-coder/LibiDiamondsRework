@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = { title: "הסיפור שלנו", description: "LIBI Diamonds נולדה כדי להפוך בחירת יהלום לתהליך ברור, אישי וישיר — מהמפרט ועד התכשיט המוגמר.", alternates: { canonical: "/about" } };
+export default function AboutPage() { return <div className="editorial-page"><header><div><h1>פחות רעש.<br />יותר יהלום.</h1><p>LIBI נולדה מתוך מחשבה פשוטה: בחירה גדולה לא צריכה להרגיש כמו מבחן, ומחיר גבוה לא צריך להסתיר את המפרט שמאחוריו.</p></div><div><Image src="/images/design/home/story-01.jpg" alt="בחינת יהלום מקרוב על שולחן עבודה" fill priority sizes="(max-width: 800px) 100vw, 50vw" /></div></header><section className="editorial-copy"><h2>איך זה עובד</h2><p>מתחילים במה שאתם יודעים — עיצוב שאהבתם, תקציב, צורת אבן או תאריך יעד. אנחנו מתרגמים את זה למפרט, מאתרים חלופות שאפשר להשוות ומסבירים מה באמת משתנה ביניהן.</p><p>רק אחרי שבוחרים את האבן, מתאימים את התכשיט: סוג הזהב, המידה, גובה השיבוץ והפרטים הקטנים שקובעים איך הוא ירגיש ביום־יום.</p><blockquote>המטרה היא לא למכור את האבן הגדולה ביותר. המטרה היא שתדעו בדיוק במה בחרתם ולמה.</blockquote><Link className="outline-action" href="/contact">לקביעת פגישה</Link></section></div>; }

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #10181C; }
+  * { box-sizing: border-box; }
+  a { color: #795D26; text-decoration: none; }
+  a:hover { color: #141A1D; }
+  ::selection { background: #C9A96A; color: #141A1D; }
+  .lb-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+  .lb-scroll::-webkit-scrollbar { display: none; }
+</style>
+</helmet>
+
+<div dir="rtl" lang="he" style="font-family: Heebo, system-ui, sans-serif; min-height: 100vh; display: flex; justify-content: center; background: #E8EAEA;">
+  <div style="width: 393px; max-width: 100%; background: #FFFFFF; color: #141A1D; position: relative; overflow: clip; overflow-clip-margin: 0px;">
+
+    
+
+    <header style="position: sticky; top: 0; z-index: 40; backdrop-filter: blur(14px); border-bottom: 1px solid rgba(20,26,29,0.09); background-color: #FFFFFF">
+      <div style="display: grid; grid-template-columns: 44px 1fr auto; align-items: center; height: 56px; padding: 0 14px 0 10px;">
+        <button type="button" aria-label="תפריט" style="width: 44px; height: 44px; display: grid; place-items: center; background: none; border: 0; padding: 0; cursor: pointer;">
+          <span style="display: block; width: 20px; height: 1px; background: #141A1D; box-shadow: 0 6px 0 #141A1D, 0 -6px 0 #141A1D;"></span>
+        </button>
+        <a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 3px; color: #141A1D; width: 243px; height: 33px">
+          <span style="font-size: 25px; font-weight: 300; letter-spacing: 0.02em; line-height: 1">Libi</span>
+          <span dir="ltr" style="font-size: 15px; letter-spacing: 0.36em; color: #697175; line-height: 1">DIAMONDS</span>
+        </a>
+        <div style="display: flex; align-items: center; gap: 2px;">
+          <a href="https://wa.me/972508611888" aria-label="וואטסאפ" style="width: 44px; height: 44px; display: grid; place-items: center; color: #141A1D;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v11H9.5L4 20.5z"></path></svg>
+          </a>
+          <a href="#" aria-label="עגלה" style="width: 44px; height: 44px; display: grid; place-items: center; color: #141A1D;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 7.5h13l-1 12h-11z"></path><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div style="padding: 0 14px 10px;">
+        <label style="display: flex; align-items: center; gap: 9px; min-height: 40px; padding: 0 12px; border: 1px solid rgba(20,26,29,0.16); background: #FFFFFF;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#697175" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4 4"></path></svg>
+          <input type="search" placeholder="חיפוש יהלום או תכשיט" style="flex: 1; border: 0; outline: none; background: none; font-family: inherit; font-size: 14px; font-weight: 300; color: #141A1D; min-width: 0;">
+        </label>
+      </div>
+      
+    </header>
+
+    <section style="position: relative;">
+      <img src="images/home/hero-01.jpg" alt="טבעת אירוסין סוליטר בזהב לבן על משי בצבע טורקיז כהה" fetchpriority="high" decoding="async" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #141A1D;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(5,14,18,0.9) 0%, rgba(5,14,18,0.58) 30%, rgba(5,14,18,0.12) 58%, rgba(5,14,18,0) 78%);"></div>
+      <div style="position: absolute; inset-inline: 0; bottom: 0; padding: 0 24px 22px;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.06em; color: #C9A96A; margin-bottom: 10px;">יהלומים טבעיים ויהלומי מעבדה</div>
+        <h1 style="font-size: 38px; font-weight: 200; line-height: 1.02; letter-spacing: -0.035em; color: #F4F7F8; margin: 0 0 14px; text-wrap: pretty;">יהלום,<br>בלי כל מה שסביבו.</h1>
+        
+        <a href="LibiDiamonds Diamond Search.dc.html" style="min-height: 44px; display: inline-flex; align-items: center; color: #C9A96A; font-size: 14px;"><span style="border-bottom: 1px solid rgba(201,169,106,0.42); padding-bottom: 3px;">או לחיפוש יהלום</span></a>
+      </div>
+    </section>
+
+    
+
+    <section style="background: #FFFFFF; padding: 44px 0 20px;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 0 24px 26px; text-align: center;">
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0;">הנחברים שלנו</h2>
+        
+      </div>
+      <div class="lb-scroll" style="display: flex; gap: 14px; overflow-x: auto; padding: 0 24px; scroll-snap-type: x proximity; scroll-padding-inline-start: 24px;">
+        <a href="LibiDiamonds Product Page.dc.html" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <div style="position: relative;">
+            <img src="images/products/ring-01-front.jpg" alt="טבעת אירוסין סוליטר בזהב לבן 18K" fetchpriority="high" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          </div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">סוליטר קלאסי, זהב לבן <span dir="ltr" style="unicode-bidi: isolate;">18K</span></div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">GIA · 1.02ct · F · VS1</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪14,900</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <div style="position: relative;">
+            <img src="images/products/tennis-01-front.jpg" alt="צמיד טניס יהלומי מעבדה בזהב לבן" fetchpriority="high" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          </div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">צמיד טניס יהלומי מעבדה</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">IGI · 3.00ct · G · VS2</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪18,500</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <div style="position: relative;">
+            <img src="images/products/studs-01-front.jpg" alt="עגילי סוליטר יהלום צמודים" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          </div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">עגילי סוליטר צמודים</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">GIA · 0.50ct · E · VVS2</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪4,700</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <div style="position: relative;">
+            <img src="images/products/pendant-01-front.jpg" alt="תליון יהלום סוליטר על שרשרת עדינה" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          </div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">תליון סוליטר, שרשרת עדינה</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">IGI · 0.70ct · F · VS1</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪6,900</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <div style="position: relative;">
+            <img src="images/products/ring-04-front.jpg" alt="טבעת אירוסין סוליטר בזהב ורוד" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          </div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">סוליטר, זהב ורוד <span dir="ltr" style="unicode-bidi: isolate;">18K</span></div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">GIA · 1.05ct · G · VS2</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪15,400</div>
+        </a>
+      </div>
+      <div style="display: flex; justify-content: center; padding: 28px 24px 0;">
+        <a href="#" style="min-height: 44px; display: inline-flex; align-items: center; font-size: 11.5px; letter-spacing: 0.16em; color: #141A1D; border-bottom: 1px solid rgba(20,26,29,0.28);">More Libi Diamonds</a>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 64px 0 20px;">
+      <div style="padding: 0 24px 26px; text-align: center;">
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 10px;">קנייה לפי קטגוריה</h2>
+        
+      </div>
+      <div class="lb-scroll" style="display: flex; gap: 12px; overflow-x: auto; padding: 0 24px; scroll-snap-type: x proximity; scroll-padding-inline-start: 24px;">
+        <a href="LibiDiamonds Engagement Rings.dc.html" style="flex: 0 0 auto; width: 132px; scroll-snap-align: start; color: #141A1D;">
+          <img src="images/categories/engagement-01.jpg" alt="טבעות אירוסין יהלום בזהב לבן" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #141A1D;">
+          <div style="font-size: 14px; font-weight: 300; padding-top: 12px; text-align: center;">טבעות אירוסין</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 132px; scroll-snap-align: start; color: #141A1D;">
+          <img src="images/categories/bands-01.jpg" alt="טבעות נישואין יהלומים בזהב לבן" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #141A1D;">
+          <div style="font-size: 14px; font-weight: 300; padding-top: 12px; text-align: center;">טבעות נישואין</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 132px; scroll-snap-align: start; color: #141A1D;">
+          <img src="images/categories/tennis-01.jpg" alt="צמיד טניס יהלומים בזהב לבן" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #141A1D;">
+          <div style="font-size: 14px; font-weight: 300; padding-top: 12px; text-align: center;">צמידי טניס</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 132px; scroll-snap-align: start; color: #141A1D;">
+          <img src="images/categories/earrings-01.jpg" alt="עגילי יהלום סוליטר צמודים" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #141A1D;">
+          <div style="font-size: 14px; font-weight: 300; padding-top: 12px; text-align: center;">עגילים</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 132px; scroll-snap-align: start; color: #141A1D;">
+          <img src="images/categories/pendants-01.jpg" alt="תליון יהלום סוליטר על שרשרת עדינה" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #141A1D;">
+          <div style="font-size: 14px; font-weight: 300; padding-top: 12px; text-align: center;">תליונים</div>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 132px; scroll-snap-align: start; color: #141A1D;">
+          <img src="images/categories/natural-01.jpg" alt="יהלומים בודדים בחיתוך עגול מבריק" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #141A1D;">
+          <div style="font-size: 14px; font-weight: 300; padding-top: 12px; text-align: center;">יהלומים בודדים</div>
+        </a>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 64px 0 20px;">
+      <div style="padding: 0 24px 26px; text-align: center;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.16em; color: #697175; margin-bottom: 14px;">מדידה חיה</div>
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 10px;">כמה זה גדול, באמת</h2>
+        <p style="font-size: 14.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto; max-width: 32ch;">האבן מוצגת על המסך בגודל אמיתי, על אצבע במידה שלכם.</p>
+      </div>
+
+      <div style="padding: 0 24px;">
+        <div style="position: relative; aspect-ratio: 4 / 3; background: #F1F4F5; overflow: hidden;">
+          <div style="position: absolute; inset-inline-start: 20px; top: 24px; max-width: 60%; display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.16em; color: #795D26;">בלעדי ב־<span dir="ltr" style="unicode-bidi: isolate;">Libi Diamonds</span></span>
+            <span style="font-size: 24px; font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; color: #141A1D;">מדידה חיה</span>
+          </div>
+          <div style="position: absolute; inset-inline-end: 16px; bottom: 16px; display: flex; flex-direction: column; align-items: flex-end; gap: 5px; text-align: end;">
+            <span style="font-size: 11px; letter-spacing: 0.16em; color: #5C666A;">מקום לתמונה</span>
+            <span dir="ltr" style="unicode-bidi: isolate; font-size: 12.5px; color: #5C666A;">home/measure-01.jpg</span>
+            <span style="font-size: 12px; font-weight: 300; color: #5C666A; max-width: 190px;">יד עם טבעת מימין, שליש שמאלי־עליון ריק לטקסט — 4:3</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; padding: 20px 0 4px; text-align: center;">
+          <div>
+            <div dir="ltr" style="unicode-bidi: isolate; font-size: 20px; font-weight: 300;">{{ caratLabel }}</div>
+            <div style="font-size: 11px; letter-spacing: 0.14em; color: #697175; padding-top: 4px;">קראט</div>
+          </div>
+          <div style="border-inline: 1px solid rgba(20,26,29,0.12);">
+            <div dir="ltr" style="unicode-bidi: isolate; font-size: 20px; font-weight: 300;">{{ mmLabel }}</div>
+            <div style="font-size: 11px; letter-spacing: 0.14em; color: #697175; padding-top: 4px;">קוטר האבן</div>
+          </div>
+          <div>
+            <div dir="ltr" style="unicode-bidi: isolate; font-size: 20px; font-weight: 300;">{{ sizeLabel }}</div>
+            <div style="font-size: 11px; letter-spacing: 0.14em; color: #697175; padding-top: 4px;">מידת טבעת</div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 18px; padding: 22px 0 0;">
+          <label style="display: flex; flex-direction: column; gap: 10px;">
+            <span style="font-size: 13px; font-weight: 300; color: #454E52;">משקל האבן</span>
+            <input type="range" min="0.3" max="2" step="0.05" value="{{ carat }}" onInput="{{ onCarat }}" style="width: 100%; accent-color: #141A1D; min-height: 44px;">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 10px;">
+            <span style="font-size: 13px; font-weight: 300; color: #454E52;">מידת האצבע</span>
+            <input type="range" min="13" max="22" step="0.5" value="{{ ring }}" onInput="{{ onRing }}" style="width: 100%; accent-color: #141A1D; min-height: 44px;">
+          </label>
+        </div>
+
+        <div style="padding: 26px 0 0;">
+          <div style="font-size: 13px; font-weight: 300; color: #454E52; margin-bottom: 10px;">כיול המסך</div>
+          <p style="font-size: 12.5px; font-weight: 300; line-height: 1.6; color: #697175; margin: 0 0 12px;">הצמידו את הצד הקצר של כרטיס אשראי לרוחב הפס וגררו עד שהם זהים. הכיול נשמר במכשיר.</p>
+          <div style="height: 40px; width: {{ cardW }}; border: 1px solid rgba(20,26,29,0.22); background: #FFFFFF;"></div>
+          <input type="range" min="2.8" max="5.2" step="0.02" value="{{ ppmm }}" onInput="{{ onPpmm }}" style="width: 100%; accent-color: #141A1D; min-height: 44px; margin-top: 8px;">
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 0 0;">
+          <a href="LibiDiamonds Diamond Search.dc.html" style="min-height: 54px; display: flex; align-items: center; justify-content: center; border: 1px solid #141A1D; color: #141A1D; font-size: 13px; letter-spacing: 0.14em;">לאבנים במידה הזו</a>
+          <a href="LibiDiamonds Contact.dc.html" style="min-height: 44px; display: inline-flex; align-items: center; justify-content: center; font-size: 11.5px; letter-spacing: 0.16em; color: #141A1D;"><span style="border-bottom: 1px solid rgba(20,26,29,0.28); padding-bottom: 3px;">למדידה על היד בפגישה</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 64px 0 20px;">
+      <div style="padding: 0 24px 26px; text-align: center;">
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 10px;">חיפוש מהיר</h2>
+        <p style="font-size: 14.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto; max-width: 30ch;">בחרו מקור, צורה או תקציב.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 6px 24px 4px;">
+        <a href="LibiDiamonds Diamond Search.dc.html" style="display: flex; align-items: center; gap: 11px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <img src="images/categories/natural-01.jpg" alt="יהלומים טבעיים בחיתוך עגול" loading="lazy" decoding="async" style="display: block; width: 58px; height: 58px; object-fit: cover; flex: 0 0 auto; background: #141A1D;">
+          <span style="font-size: 13.5px; font-weight: 300;">טבעיים</span>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="display: flex; align-items: center; gap: 11px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <img src="images/categories/lab-01.jpg" alt="יהלומי מעבדה בחיתוך אמרלד" loading="lazy" decoding="async" style="display: block; width: 58px; height: 58px; object-fit: cover; flex: 0 0 auto; background: #141A1D;">
+          <span style="font-size: 13.5px; font-weight: 300;">מעבדה</span>
+        </a>
+      </div>
+      <div class="lb-scroll" style="display: flex; gap: 10px; overflow-x: auto; padding: 8px 24px 2px; scroll-snap-type: x proximity; scroll-padding-inline-start: 24px; mask-image: linear-gradient(to left, #000 0%, #000 84%, rgba(0,0,0,0.12) 100%); -webkit-mask-image: linear-gradient(to left, #000 0%, #000 84%, rgba(0,0,0,0.12) 100%);">
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 78px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0 14px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <span style="width: 27px; height: 27px; border: 1px solid #697175; border-radius: 50%;"></span>
+          <span style="font-size: 12.5px;">עגול</span>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 78px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0 14px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <span style="width: 20px; height: 28px; border: 1px solid #697175; border-radius: 50%;"></span>
+          <span style="font-size: 12.5px;">אובל</span>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 78px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0 14px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <span style="width: 20px; height: 28px; border: 1px solid #697175;"></span>
+          <span style="font-size: 12.5px;">אמרלד</span>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 78px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0 14px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <span style="width: 26px; height: 26px; border: 1px solid #697175;"></span>
+          <span style="font-size: 12.5px;">נסיכה</span>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 78px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0 14px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <span style="width: 17px; height: 29px; border: 1px solid #697175; border-radius: 50% / 12%;"></span>
+          <span style="font-size: 12.5px;">מרקיזה</span>
+        </a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; width: 78px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0 14px; border: 1px solid rgba(20,26,29,0.14); color: #141A1D;">
+          <span style="width: 26px; height: 26px; border: 1px solid #697175; border-radius: 7px;"></span>
+          <span style="font-size: 12.5px;">קושן</span>
+        </a>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 22px 24px 0;">
+        <a href="LibiDiamonds Diamond Search.dc.html" dir="ltr" style="unicode-bidi: isolate; min-height: 46px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(20,26,29,0.14); color: #141A1D; font-size: 13.5px;">עד ₪10,000</a>
+        <a href="LibiDiamonds Diamond Search.dc.html" dir="ltr" style="unicode-bidi: isolate; min-height: 46px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(20,26,29,0.14); color: #141A1D; font-size: 13.5px;">₪10,000–20,000</a>
+        <a href="LibiDiamonds Diamond Search.dc.html" dir="ltr" style="unicode-bidi: isolate; min-height: 46px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(20,26,29,0.14); color: #141A1D; font-size: 13.5px;">₪20,000–40,000</a>
+        <a href="LibiDiamonds Diamond Search.dc.html" dir="ltr" style="unicode-bidi: isolate; min-height: 46px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(20,26,29,0.14); color: #141A1D; font-size: 13.5px;">₪40,000+</a>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; color: #141A1D;">
+      <img src="images/home/story-01.jpg" alt="מלקחיים מחזיקים יהלום ליד זכוכית מגדלת ודוח דירוג" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;">
+      <div style="padding: 56px 24px 24px; text-align: center;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.16em; color: #697175; margin-bottom: 14px;">למה אחנחו?</div>
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 auto 20px; max-width: 22ch; text-wrap: pretty;">יהלומים אמיתיים. מחירים אמיתיים. בלי דמי שכירות של קניונים</h2>
+        <p style="font-size: 15.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto 18px; max-width: 34ch; text-wrap: pretty;">ידעתם שכ~40% מתשלום על תכשיט ממוצע הולך על שכירות החנות, משכורות, וביטוח?<br>אצלנו ב-ליבי Diamonds <span style="color: #141A1D;">החלטנו על אסטרטגיה שונה לחלוטין.</span></p>
+        <p style="font-size: 15.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto 18px; max-width: 34ch; text-wrap: pretty;">ויתרנו על חלונות הראווה המפוארים בקניון ועל עלויות התפעול המנופחות, והעברנו את הכל לרשת. התוצאה? אותם 40% נשארים אצלכם בכיס.</p>
+        <p style="font-size: 15.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto 28px; max-width: 34ch; text-wrap: pretty;">המשמעות פשוטה: באותו התקציב בדיוק, אתם מקבלים יהלום גדול יותר, איכותי יותר ונקי יותר – בלי לשלם על הקירות של החנות. בלי פשרות, בלי תיווך, פשוט תכשיט נטו.</p>
+        <a href="#" style="min-height: 54px; display: inline-flex; align-items: center; justify-content: center; padding: 0 30px; border: 1px solid #141A1D; color: #141A1D; font-size: 13px; letter-spacing: 0.14em;">הסיפור שלנו</a>
+      </div>
+    </section>
+
+    <section id="guide" style="background: #FFFFFF; padding: 64px 0 0;">
+      <div style="padding: 0 24px 26px; text-align: center;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.16em; color: #697175; margin-bottom: 14px;">מדריך היהלומים</div>
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 10px;">להבין את היהלום</h2>
+        <p style="font-size: 14.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto; max-width: 30ch;">ארבעה נתונים קובעים את המחיר.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0 24px;">
+        <a href="#" style="display: flex; flex-direction: column; color: #141A1D;">
+          <div style="aspect-ratio: 1 / 1; background: #FAFBFB; display: grid; place-items: center; margin: 0;">
+            <div dir="ltr" style="unicode-bidi: isolate; display: flex; align-items: flex-end; gap: 7px;">
+              <span style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(20,26,29,0.16); background: radial-gradient(circle at 34% 26%, #FFFFFF 0%, #EFF3F4 42%, #D3DADC 100%);"></span>
+              <span style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(20,26,29,0.16); background: radial-gradient(circle at 34% 26%, #FFFFFF 0%, #EFF3F4 42%, #D3DADC 100%);"></span>
+              <span style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #C9A96A; background: radial-gradient(circle at 34% 26%, #FFFFFF 0%, #EFF3F4 42%, #D3DADC 100%); box-shadow: 0 0 0 3px rgba(201,169,106,0.18);"></span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 14px 4px 0; text-align: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <span style="font-size: 16.5px; font-weight: 300;">משקל</span>
+              <span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; color: #697175;">CARAT</span>
+            </div>
+            <span dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 12.5px; color: #795D26;">0.90ct</span>
+          </div>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; color: #141A1D;">
+          <div style="aspect-ratio: 1 / 1; background: #FAFBFB; display: grid; place-items: center; margin: 0;">
+            <div dir="ltr" style="unicode-bidi: isolate; display: flex; gap: 3px;">
+              <span style="width: 19px; height: 62px; background: #FFFFFF; border: 1px solid rgba(20,26,29,0.13);"></span>
+              <span style="width: 19px; height: 62px; background: #FCFBF5; border: 1px solid rgba(20,26,29,0.13);"></span>
+              <span style="width: 19px; height: 62px; background: #F8F3E1; border: 1px solid rgba(20,26,29,0.13);"></span>
+              <span style="width: 19px; height: 62px; background: #EFE0B8; border: 1px solid rgba(20,26,29,0.13);"></span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 14px 4px 0; text-align: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <span style="font-size: 16.5px; font-weight: 300;">צבע</span>
+              <span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; color: #697175;">COLOUR</span>
+            </div>
+            <span dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 12.5px; color: #795D26;">F–H</span>
+          </div>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; color: #141A1D;">
+          <div style="aspect-ratio: 1 / 1; background: #FAFBFB; display: grid; place-items: center; margin: 0;">
+            <div style="position: relative; width: 76px; height: 76px; border-radius: 50%; border: 1px solid rgba(20,26,29,0.16); background: radial-gradient(circle at 34% 26%, #FFFFFF 0%, #EFF3F4 42%, #D3DADC 100%);">
+              <span style="position: absolute; left: 36%; top: 40%; width: 3px; height: 3px; border-radius: 50%; background: rgba(20,26,29,0.42);"></span>
+              <span style="position: absolute; left: 58%; top: 58%; width: 2.5px; height: 2.5px; border-radius: 50%; background: rgba(20,26,29,0.34);"></span>
+              <span style="position: absolute; inset: -9px; border: 1px solid rgba(121,93,38,0.35); border-radius: 50%;"></span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 14px 4px 0; text-align: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <span style="font-size: 16.5px; font-weight: 300;">ניקיון</span>
+              <span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; color: #697175;">CLARITY</span>
+            </div>
+            <span dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 12.5px; color: #795D26;">VS2–SI1</span>
+          </div>
+        </a>
+        <a href="#" style="display: flex; flex-direction: column; color: #141A1D;">
+          <div style="aspect-ratio: 1 / 1; background: #FAFBFB; display: grid; place-items: center; margin: 0;">
+            <div style="display: flex; align-items: flex-end; gap: 6px; height: 70px;">
+              <span style="width: 15px; height: 100%; background: linear-gradient(to top, #6E5423 0%, #C9A96A 100%);"></span>
+              <span style="width: 15px; height: 72%; background: linear-gradient(to top, #6E5423 0%, #C9A96A 100%); opacity: 0.6;"></span>
+              <span style="width: 15px; height: 48%; background: linear-gradient(to top, #6E5423 0%, #C9A96A 100%); opacity: 0.4;"></span>
+              <span style="width: 15px; height: 28%; background: linear-gradient(to top, #6E5423 0%, #C9A96A 100%); opacity: 0.26;"></span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 14px 4px 0; text-align: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <span style="font-size: 16.5px; font-weight: 300;">ליטוש</span>
+              <span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; color: #697175;">CUT</span>
+            </div>
+            <span dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 12.5px; color: #795D26;">Excellent</span>
+          </div>
+        </a>
+      </div>
+      <div style="padding: 18px 24px 32px;">
+        <a href="#" style="min-height: 44px; display: inline-flex; align-items: center; font-size: 11.5px; letter-spacing: 0.16em; color: #141A1D; border-bottom: 1px solid rgba(20,26,29,0.28);">למדריך המלא</a>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 64px 24px 24px;">
+      <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 34px; text-align: center;">ההבדל של ליבי</h2>
+      <div style="display: flex; flex-direction: column; gap: 36px;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center;">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#795D26" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l4 6-8 12L4 9z"></path><path d="M4 9h16M8 3l-2 6 6 12 6-12-2-6"></path></svg>
+          <div>
+            <div style="font-size: 17px; font-weight: 300; margin-bottom: 7px;">ישר מהמקור</div>
+            <div style="font-size: 14px; font-weight: 300; line-height: 1.65; color: #6B7478; max-width: 26ch; text-wrap: pretty;">בוחרים אבנים בעצמנו, בלי חוליות באמצע.</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center;">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#795D26" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.5" r="6"></circle><path d="M9 14.5 8 21.5l4-2 4 2-1-7"></path></svg>
+          <div>
+            <div style="font-size: 17px; font-weight: 300; margin-bottom: 7px;">תעודה לכל אבן</div>
+            <div style="font-size: 14px; font-weight: 300; line-height: 1.65; color: #6B7478; max-width: 26ch; text-wrap: pretty;">כל יהלום מגיע עם דירוג <span dir="ltr" style="unicode-bidi: isolate;">GIA</span> או <span dir="ltr" style="unicode-bidi: isolate;">IGI</span>.</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center;">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#795D26" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v11H9.5L4 20.5z"></path><path d="M8.5 11h7"></path></svg>
+          <div>
+            <div style="font-size: 17px; font-weight: 300; margin-bottom: 7px;">ליווי אישי</div>
+            <div style="font-size: 14px; font-weight: 300; line-height: 1.65; color: #6B7478; max-width: 26ch; text-wrap: pretty;">אדם אחד מלווה אותך מהאבן ועד המשלוח.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 44px 0 20px;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 0 24px 26px; text-align: center;">
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0;">הנבחרים שלנו</h2>
+        <a href="#" style="min-height: 44px; display: inline-flex; align-items: center; font-size: 11.5px; letter-spacing: 0.16em; color: #141A1D; border-bottom: 1px solid rgba(20,26,29,0.28);">לכל הפריטים</a>
+      </div>
+      <div class="lb-scroll" style="display: flex; gap: 14px; overflow-x: auto; padding: 0 24px; scroll-snap-type: x proximity; scroll-padding-inline-start: 24px;">
+        <a href="LibiDiamonds Product Page.dc.html" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <img src="images/products/ring-03-front.jpg" alt="טבעת אירוסין סוליטר אובל בזהב לבן" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">סוליטר אובל, זהב לבן</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">GIA · 1.20ct · G · VS2</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪21,700</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <img src="images/products/ring-02-front.jpg" alt="טבעת אירוסין סוליטר עם פס משובץ" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">סוליטר על פס משובץ</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">GIA · 0.91ct · F · VS1</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪16,300</div>
+        </a>
+        <a href="#" style="flex: 0 0 auto; width: 158px; scroll-snap-align: start; display: flex; flex-direction: column; color: #141A1D;">
+          <img src="images/products/ring-01-front.jpg" alt="טבעת אירוסין סוליטר בזהב לבן" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #F7F8F8;">
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.5; padding-top: 14px; text-align: center;">סוליטר קלאסי, זהב לבן</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 12px; letter-spacing: 0.08em; color: #697175; margin-top: auto; padding-top: 7px;">GIA · 0.72ct · H · VS2</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: center; font-size: 15px; padding-top: 6px;">₪9,800</div>
+        </a>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; color: #141A1D; padding-top: 20px; display: flex; flex-direction: column;">
+      <div style="position: relative; aspect-ratio: 16 / 10; background: #F1F4F5; display: grid; place-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 20px; text-align: center;">
+          <span style="font-size: 11px; letter-spacing: 0.16em; color: #5C666A;">מקום לתמונה</span>
+          <span dir="ltr" style="unicode-bidi: isolate; font-size: 12.5px; color: #5C666A;">home/consult-01.jpg</span>
+          <span style="font-size: 12.5px; font-weight: 300; color: #5C666A; max-width: 240px;">שולחן ייעוץ: אבנים במגש קטיפה, מלקחיים, מחשב נייד — 16:10</span>
+        </div>
+      </div>
+      <div style="padding: 40px 24px 24px; text-align: center;">
+        
+        <h2 style="font-size: 28px; font-weight: 200; line-height: 1.16; letter-spacing: -0.03em; margin: 0 0 14px; text-wrap: pretty; text-align: center; color: #795D26">קשה לכם להחליט?</h2>
+        <p style="font-size: 15px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto 26px; max-width: 32ch; text-wrap: pretty; text-align: center">קבעו איתנו פגישה ונעזור לכם לחבור את התכשיט היפה ביותר עבורכם</p>
+        <div style="display: flex; flex-direction: column; gap: 9px;">
+          
+          <a href="https://wa.me/972508611888" style="min-height: 54px; display: flex; align-items: center; justify-content: center; border: 1px solid #141A1D; color: #141A1D; font-size: 13px; letter-spacing: 0.14em;">לקביעת פגישה</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 64px 0 24px;">
+      <div style="padding: 0 24px 26px; text-align: center;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.16em; color: #697175; margin-bottom: 14px;">אינסטגרם</div>
+        <h2 style="font-size: 31px; font-weight: 200; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 10px;">האבנים שיצאו מכאן</h2>
+        <p style="font-size: 14.5px; font-weight: 300; line-height: 1.7; color: #6B7478; margin: 0 auto; max-width: 30ch;">תייגו <span dir="ltr" style="unicode-bidi: isolate;">@libidiamonds</span></p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px;">
+        <div style="aspect-ratio: 1 / 1; background: #EDF1F2; display: grid; place-items: center; padding: 6px;"><span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; color: #5C666A; text-align: center;">social/ugc-01.jpg</span></div>
+        <div style="aspect-ratio: 1 / 1; background: #EDF1F2; display: grid; place-items: center; padding: 6px;"><span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; color: #5C666A; text-align: center;">social/ugc-02.jpg</span></div>
+        <div style="aspect-ratio: 1 / 1; background: #EDF1F2; display: grid; place-items: center; padding: 6px;"><span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; color: #5C666A; text-align: center;">social/ugc-03.jpg</span></div>
+        <div style="aspect-ratio: 1 / 1; background: #EDF1F2; display: grid; place-items: center; padding: 6px;"><span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; color: #5C666A; text-align: center;">social/ugc-04.jpg</span></div>
+        <div style="aspect-ratio: 1 / 1; background: #EDF1F2; display: grid; place-items: center; padding: 6px;"><span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; color: #5C666A; text-align: center;">social/ugc-05.jpg</span></div>
+        <div style="aspect-ratio: 1 / 1; background: #EDF1F2; display: grid; place-items: center; padding: 6px;"><span dir="ltr" style="unicode-bidi: isolate; font-size: 11px; color: #5C666A; text-align: center;">social/ugc-06.jpg</span></div>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding: 64px 24px 24px;">
+      <div style="display: flex; align-items: baseline; justify-content: center; gap: 10px; margin-bottom: 28px;">
+        <span dir="ltr" style="unicode-bidi: isolate; font-size: 26px; font-weight: 300;">4.9</span>
+        <span style="font-size: 13px; font-weight: 300; color: #465256;">מתוך 5 · ביקורות גוגל</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        <div style="text-align: center;">
+          <p style="font-size: 15.5px; font-weight: 300; line-height: 1.75; margin: 0 auto 10px; max-width: 34ch; text-wrap: pretty;">הראו לי שלוש אבנים באותו תקציב והסבירו בדיוק מה ההבדל. קניתי את הזולה מהשלוש.</p>
+          <span style="font-size: 12px; letter-spacing: 0.08em; color: #697175;">דניאל א׳</span>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 15.5px; font-weight: 300; line-height: 1.75; margin: 0 auto 10px; max-width: 34ch; text-wrap: pretty;">בלי לחץ, בלי אולם ראווה. תעודה, מחיר, וזה הכול.</p>
+          <span style="font-size: 12px; letter-spacing: 0.08em; color: #697175;">נועה ל׳</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #FFFFFF; padding-top: 44px;">
+      <div style="padding: 0 24px 8px; text-align: center;">
+        <h2 style="font-size: 20px; font-weight: 300; letter-spacing: -0.015em; margin: 0;">איך נוכל לעזור?</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; padding: 16px 24px 48px;">
+        <a href="https://wa.me/972508611888" style="display: flex; flex-direction: column; align-items: center; gap: 9px; min-height: 88px; justify-content: center; color: #141A1D;">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#795D26" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v11H9.5L4 20.5z"></path></svg>
+          <span style="font-size: 13px; font-weight: 300;">וואטסאפ</span>
+        </a>
+        <a href="tel:0508611888" style="display: flex; flex-direction: column; align-items: center; gap: 9px; min-height: 88px; justify-content: center; color: #141A1D; border-inline: 1px solid rgba(20,26,29,0.12);">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#795D26" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6.5 6.5l1.5-2 4 1.5v3c0 1-.8 1.8-1.8 1.7C11 19.6 4.4 13 3.8 5.3 3.7 4.3 4.5 3.5 6 3.5z"></path></svg>
+          <span style="font-size: 13px; font-weight: 300;">שיחה</span>
+        </a>
+        <a href="LibiDiamonds Contact.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 9px; min-height: 88px; justify-content: center; color: #141A1D;">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#795D26" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1"></rect><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"></path></svg>
+          <span style="font-size: 13px; font-weight: 300;">פגישה</span>
+        </a>
+      </div>
+    </section>
+
+    <footer style="background: #FFFFFF; border-top: 1px solid rgba(20,26,29,0.12); color: #6B7478; padding: 40px 24px 28px;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 3px; margin-bottom: 24px;">
+        <span style="font-size: 20px; font-weight: 300; color: #141A1D;">ליבי</span>
+        <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.36em; color: #795D26;">DIAMONDS</span>
+      </div>
+      <div style="padding-bottom: 22px; border-bottom: 1px solid rgba(20,26,29,0.12);">
+        <div style="font-size: 13.5px; font-weight: 300; color: #141A1D; margin-bottom: 10px;">מבצעים ומלאי חדש למייל</div>
+        <div style="display: flex; gap: 8px;">
+          <input type="email" placeholder="כתובת מייל" style="flex: 1; min-width: 0; min-height: 46px; padding: 0 12px; border: 1px solid rgba(20,26,29,0.18); background: none; color: #141A1D; font-family: inherit; font-size: 14px; font-weight: 300;">
+          <button type="button" style="flex: 0 0 auto; min-height: 46px; padding: 0 18px; border: 0; background: #141A1D; color: #FFFFFF; font-family: inherit; font-size: 13px; letter-spacing: 0.12em; cursor: pointer;">הרשמה</button>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; font-size: 14px; font-weight: 300; padding: 10px 0 18px; border-bottom: 1px solid rgba(20,26,29,0.12);">
+        <a href="#guide" style="color: #454E52; min-height: 44px; display: flex; align-items: center;">מדריך היהלומים</a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="color: #454E52; min-height: 44px; display: flex; align-items: center;">חיפוש יהלום</a>
+        <a href="LibiDiamonds FAQ.dc.html" style="color: #454E52; min-height: 44px; display: flex; align-items: center;">שאלות נפוצות</a>
+        <a href="#" style="color: #454E52; min-height: 44px; display: flex; align-items: center;">הסיפור שלנו</a>
+        <a href="LibiDiamonds Contact.dc.html" style="color: #454E52; min-height: 44px; display: flex; align-items: center;">יצירת קשר</a>
+        <a href="#" style="color: #454E52; min-height: 44px; display: flex; align-items: center;">משלוח והחזרות</a>
+      </div>
+      <div style="padding: 14px 0 0;">
+        <a href="tel:0508611888" dir="ltr" style="unicode-bidi: isolate; display: flex; align-items: center; justify-content: flex-end; min-height: 44px; color: #141A1D; font-size: 17px; letter-spacing: 0.03em;">050-8611888</a>
+        <div style="font-size: 12.5px; color: #697175; text-align: start;">ייעוץ אישי בטלפון</div>
+      </div>
+      <div style="padding-top: 10px; display: flex; gap: 18px; font-size: 12.5px;">
+        <a href="#" style="color: #6B7478; min-height: 44px; display: flex; align-items: center;">הצהרת נגישות</a>
+        <a href="#" style="color: #6B7478; min-height: 44px; display: flex; align-items: center;">תקנון</a>
+        <a href="#" style="color: #6B7478; min-height: 44px; display: flex; align-items: center;">פרטיות</a>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:393,&quot;height&quot;:880}}">class Component extends DCLogic {
+  state = { carat: 1, ring: 17, ppmm: 3.78 };
+
+  componentDidMount() {
+    try {
+      const v = parseFloat(localStorage.getItem('libi-screen-ppmm'));
+      if (v > 2 && v < 6) this.setState({ ppmm: v });
+    } catch (e) {}
+  }
+
+  stoneMm(ct) { return 6.5 * Math.cbrt(ct); }
+
+  renderVals() {
+    const { carat, ring, ppmm } = this.state;
+    const mm = this.stoneMm(carat);
+    const stonePx = mm * ppmm;
+    const fingerPx = (ring + 2.4) * ppmm;
+    return {
+      carat, ring, ppmm,
+      caratLabel: carat.toFixed(2),
+      mmLabel: mm.toFixed(1) + 'mm',
+      sizeLabel: ring.toFixed(1),
+      stoneW: stonePx.toFixed(1) + 'px',
+      stoneOffset: (-stonePx / 2).toFixed(1) + 'px',
+      stoneTop: (-stonePx + 1).toFixed(1) + 'px',
+      bandH: (2.2 * ppmm).toFixed(1) + 'px',
+      fingerW: fingerPx.toFixed(1) + 'px',
+      cardW: (53.98 * ppmm).toFixed(1) + 'px',
+      onCarat: (e) => this.setState({ carat: parseFloat(e.target.value) }),
+      onRing: (e) => this.setState({ ring: parseFloat(e.target.value) }),
+      onPpmm: (e) => {
+        const ppmm = parseFloat(e.target.value);
+        try { localStorage.setItem('libi-screen-ppmm', String(ppmm)); } catch (err) {}
+        this.setState({ ppmm });
+      }
+    };
+  }
+}</script>
+</body>
+</html>

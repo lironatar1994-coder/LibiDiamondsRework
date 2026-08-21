@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #10181C; }
+  * { box-sizing: border-box; }
+  a { color: #795D26; text-decoration: none; }
+  a:hover { color: #141A1D; }
+  ::selection { background: #C9A96A; color: #141A1D; }
+  .lb-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+  .lb-scroll::-webkit-scrollbar { display: none; }
+  image-slot:not(:defined) { display: block; width: 100%; height: 100%; background: #17313A; }
+  @keyframes lbSheet { from { transform: translateY(14px); opacity: 0.6; } to { transform: translateY(0); opacity: 1; } }
+  @keyframes lbVeil { from { opacity: 0; } to { opacity: 1; } }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div dir="rtl" lang="he" style="font-family: Heebo, system-ui, sans-serif; min-height: 100vh; display: flex; justify-content: center; background: #10181C;">
+  <div style="width: 393px; max-width: 100%; background: #F4F6F6; color: #141A1D; position: relative; overflow: clip; overflow-clip-margin: 0px;">
+
+    <header style="position: sticky; top: 0; z-index: 40; background: rgba(244,246,246,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(20,26,29,0.09);">
+      <div style="display: grid; grid-template-columns: 44px 1fr auto; align-items: center; height: 56px; padding: 0 14px 0 10px;">
+        <button type="button" aria-label="תפריט" style="width: 44px; height: 44px; display: grid; place-items: center; background: none; border: 0; padding: 0; cursor: pointer;">
+          <span style="display: block; width: 20px; height: 1px; background: #141A1D; box-shadow: 0 6px 0 #141A1D, 0 -6px 0 #141A1D;"></span>
+        </button>
+        <a href="LibiDiamonds Mobile Home v2.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 3px; color: #141A1D;">
+          <span style="font-size: 19px; font-weight: 300; letter-spacing: 0.02em; line-height: 1;">ליבי</span>
+          <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.36em; color: #697175; line-height: 1;">DIAMONDS</span>
+        </a>
+        <a href="tel:0508611888" style="min-width: 44px; height: 44px; display: flex; align-items: center; justify-content: flex-end; color: #141A1D; font-size: 13px;">שיחה</a>
+      </div>
+      <div class="lb-scroll" style="display: flex; gap: 20px; overflow-x: auto; padding: 0 24px; border-top: 1px solid rgba(20,26,29,0.07); mask-image: linear-gradient(to left, #000 0%, #000 88%, rgba(0,0,0,0.1) 100%); -webkit-mask-image: linear-gradient(to left, #000 0%, #000 88%, rgba(0,0,0,0.1) 100%);">
+        <a href="LibiDiamonds Diamond Search.dc.html" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 300; color: #454E52;">יהלומים</a>
+        <a href="#" aria-current="page" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 400; color: #141A1D; box-shadow: inset 0 -1px 0 #795D26;">אירוסין</a>
+        <a href="#" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 300; color: #454E52;">נישואין</a>
+        <a href="#" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 300; color: #454E52;">צמידים</a>
+        <a href="#" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 300; color: #454E52;">עגילים</a>
+        <a href="#" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 300; color: #454E52;">תליונים</a>
+        <a href="#" style="flex: 0 0 auto; min-height: 44px; display: flex; align-items: center; font-size: 13.5px; font-weight: 300; color: #454E52;">מדריך</a>
+      </div>
+    </header>
+
+    <section style="position: relative;">
+      <img src="images/categories/engagement-01.jpg" alt="שלוש טבעות אירוסין יהלום בזהב לבן על משי כהה" fetchpriority="high" decoding="async" style="display: block; width: 396px; aspect-ratio: 12 / 5; object-fit: cover; object-position: 50% 42%; background: #141A1D; height: 326px">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(5,14,18,0.82) 0%, rgba(5,14,18,0.30) 52%, rgba(5,14,18,0.04) 100%);"></div>
+      <div style="position: absolute; inset-inline: 0; bottom: 0; padding: 0 24px 20px;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.06em; color: #C9A96A; margin-bottom: 9px;">קולקציה</div>
+        <h1 style="font-size: 36px; font-weight: 200; line-height: 1.04; letter-spacing: -0.035em; color: #F4F7F8; margin: 0;">טבעות אירוסין</h1>
+      </div>
+    </section>
+
+    <section style="padding: 18px 24px 20px; background-color: #FFFFFF">
+      
+    </section>
+
+    
+
+    <div style="position: sticky; top: 102px; z-index: 30; backdrop-filter: blur(14px); border-bottom: 1px solid rgba(20,26,29,0.09); background-color: #FFFFFFF9">
+      <div style="display: flex; align-items: stretch; min-height: 52px; padding: 0 24px;">
+        <button type="button" onClick="{{ openFilter }}" style="flex: 0 0 auto; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; background: none; border: 0; color: #141A1D; font-family: inherit; cursor: pointer;">
+          <span style="display: grid; grid-template-rows: 1px 1px 1px; gap: 3px; width: 13px;">
+            <span style="background: currentColor;"></span>
+            <span style="background: currentColor; width: 9px;"></span>
+            <span style="background: currentColor; width: 5px;"></span>
+          </span>
+          <span style="font-size: 15px; font-weight: 300; letter-spacing: 0.02em;">סינון</span>
+          <span dir="ltr" style="unicode-bidi: isolate; font-size: 10.5px; font-weight: 300; letter-spacing: 0.1em; color: #9AA1A5;">{{ countLabel }}</span>
+        </button>
+        <span style="flex: 0 0 auto; align-self: center; width: 1px; height: 16px; background: rgba(20,26,29,0.14); margin-inline: 16px;"></span>
+        <div class="lb-scroll" style="flex: 1 1 auto; display: flex; align-items: center; gap: 18px; overflow-x: auto; mask-image: linear-gradient(to left, #000 0%, #000 86%, rgba(0,0,0,0.06) 100%); -webkit-mask-image: linear-gradient(to left, #000 0%, #000 86%, rgba(0,0,0,0.06) 100%);">
+          <sc-for list="{{ quick }}" as="q" hint-placeholder-count="5">
+            <button type="button" onClick="{{ q.onClick }}" style="{{ q.style }}">{{ q.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <sc-if value="{{ hasFilters }}" hint-placeholder-val="{{ false }}">
+        <div class="lb-scroll" style="display: flex; align-items: center; gap: 7px; overflow-x: auto; padding: 0 24px 12px;">
+          <sc-for list="{{ pills }}" as="pill" hint-placeholder-count="2">
+            <button type="button" onClick="{{ pill.onClick }}" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 11px; background: #FFFFFF; border: 1px solid rgba(20,26,29,0.14); color: #141A1D; font-family: inherit; font-size: 12.5px; font-weight: 300; cursor: pointer;">
+              <span>{{ pill.label }}</span>
+              <span style="position: relative; width: 8px; height: 8px; opacity: 0.55;">
+                <span style="position: absolute; inset-block: 50%; inset-inline: 0; height: 1px; background: #141A1D; transform: rotate(45deg);"></span>
+                <span style="position: absolute; inset-block: 50%; inset-inline: 0; height: 1px; background: #141A1D; transform: rotate(-45deg);"></span>
+              </span>
+            </button>
+          </sc-for>
+          <button type="button" onClick="{{ clearAll }}" style="flex: 0 0 auto; height: 32px; padding: 0 4px; background: none; border: 0; color: #795D26; font-family: inherit; font-size: 12.5px; cursor: pointer;">נקה הכול</button>
+        </div>
+      </sc-if>
+    </div>
+
+    <section style="background: #FFFFFF; padding: 22px 0 0;">
+      <div style="{{ gridStyle }}">
+        <sc-for list="{{ lead }}" as="item" hint-placeholder-count="4">
+          <a href="LibiDiamonds Product Page.dc.html" style="display: flex; flex-direction: column; color: #141A1D;">
+            <img src="{{ item.img }}" alt="{{ item.title }}" loading="lazy" decoding="async" style="{{ imgStyle }}">
+            <div style="{{ titleStyle }}">{{ item.title }}</div>
+            <div style="display: flex; align-items: center; gap: 7px; margin-top: auto; padding-top: 7px;">
+              <span style="{{ item.glyph }}"></span>
+              <span dir="ltr" style="unicode-bidi: isolate; font-size: 12.5px; letter-spacing: 0.04em; color: #535C60;">{{ item.spec }}</span>
+            </div>
+            <div dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 16px; font-weight: 400; padding-top: 6px;">{{ item.priceLabel }}</div>
+          </a>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ showGuideBreak }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top: 30px; background: #17313A; color: #F4F6F6;">
+          <div style="position: relative; width: 100%; aspect-ratio: 1 / 1;">
+            <image-slot id="er-fitting" shape="rect" fit="cover" placeholder="טבעת נענדת, אור חלון — images/editorial/fitting-01.jpg" style="position: absolute; inset: 0;"></image-slot>
+          </div>
+          
+        </div>
+      </sc-if>
+
+      <div style="{{ restGridStyle }}">
+        <sc-for list="{{ rest }}" as="item" hint-placeholder-count="4">
+          <a href="LibiDiamonds Product Page.dc.html" style="display: flex; flex-direction: column; color: #141A1D;">
+            <img src="{{ item.img }}" alt="{{ item.title }}" loading="lazy" decoding="async" style="{{ imgStyle }}">
+            <div style="{{ titleStyle }}">{{ item.title }}</div>
+            <div style="display: flex; align-items: center; gap: 7px; margin-top: auto; padding-top: 7px;">
+              
+              <span dir="ltr" style="unicode-bidi: isolate; font-size: 12.5px; letter-spacing: 0.04em; color: #535C60;">{{ item.spec }}</span>
+            </div>
+            <div dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 16px; font-weight: 400; padding-top: 6px;">{{ item.priceLabel }}</div>
+          </a>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+        <div style="padding: 8px 24px 40px;">
+          <div style="font-size: 19px; font-weight: 300; line-height: 1.4; margin-bottom: 10px;">אין דגמים שמתאימים לסינון הזה.</div>
+          <p style="font-size: 14.5px; font-weight: 300; line-height: 1.6; color: #535C60; margin: 0 0 20px;">נסו להסיר סינון אחד, או דברו איתנו — יש מלאי שלא מופיע באתר.</p>
+          <button type="button" onClick="{{ clearAll }}" style="min-height: 52px; width: 100%; background: #141A1D; border: 0; color: #F4F6F6; font-family: inherit; font-size: 15.5px; cursor: pointer;">נקה סינון</button>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ hasMore }}" hint-placeholder-val="{{ true }}">
+        <div style="padding: 30px 24px 0;">
+          <button type="button" onClick="{{ loadMore }}" style="width: 100%; min-height: 56px; background: #FFFFFF; border: 1px solid rgba(20,26,29,0.2); color: #141A1D; font-family: inherit; font-size: 15.5px; letter-spacing: 0.01em; cursor: pointer;">{{ moreLabel }}</button>
+        </div>
+      </sc-if>
+
+      <div style="padding: 34px 24px 0;">
+        <div style="height: 1px; background: rgba(20,26,29,0.09);"></div>
+      </div>
+
+      <div style="padding: 28px 24px 18px;">
+        <h2 style="font-size: 25px; font-weight: 300; letter-spacing: -0.02em; margin: 0 0 6px;">סגנונות</h2>
+        <div style="font-size: 13.5px; font-weight: 300; color: #697175;">לפי צורת המשבצת</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(20,26,29,0.10);">
+        <sc-for list="{{ styleGuide }}" as="row" hint-placeholder-count="2">
+          <button type="button" onClick="{{ row.onClick }}" style="display: flex; flex-direction: column; background: #FFFFFF; border: 0; padding: 0; color: #141A1D; font-family: inherit; cursor: pointer;">
+            <img src="{{ row.img }}" alt="{{ row.alt }}" loading="lazy" decoding="async" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #FFFFFF;">
+            <span style="min-height: 52px; display: flex; align-items: center; justify-content: center; font-size: 14.5px; font-weight: 300; letter-spacing: 0.01em;">{{ row.label }}</span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="padding: 22px 24px 36px;">
+        <a href="#" style="min-height: 44px; display: inline-flex; align-items: center; color: #795D26; font-size: 14.5px;"><span style="border-bottom: 1px solid rgba(121,93,38,0.32); padding-bottom: 3px;">למדריך הסגנונות</span></a>
+      </div>
+    </section>
+
+    <section style="background: #E4E9EA; padding: 28px 24px 30px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 18px;">
+        <div>
+          <div style="font-size: 15.5px; font-weight: 400; margin-bottom: 5px;">תעודה לכל אבן</div>
+          <div dir="ltr" style="unicode-bidi: isolate; text-align: right; font-size: 12.5px; color: #4B565A;">GIA · IGI</div>
+        </div>
+        <div>
+          <div style="font-size: 15.5px; font-weight: 400; margin-bottom: 5px;">התאמת מידה</div>
+          <div style="font-size: 12.5px; color: #4B565A;">לאחר ההזמנה</div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background: #0B0E10; color: rgba(244,246,246,0.7); padding: 34px 24px 24px;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 3px; margin-bottom: 22px;">
+        <span style="font-size: 20px; font-weight: 300; color: #F4F6F6;">ליבי</span>
+        <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.36em; color: #C9A96A;">DIAMONDS</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; font-size: 14px; font-weight: 300; padding-bottom: 16px; border-bottom: 1px solid rgba(244,246,246,0.12);">
+        <a href="#" style="color: rgba(244,246,246,0.7); min-height: 44px; display: flex; align-items: center;">מדריך היהלומים</a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="color: rgba(244,246,246,0.7); min-height: 44px; display: flex; align-items: center;">חיפוש יהלום</a>
+        <a href="LibiDiamonds FAQ.dc.html" style="color: rgba(244,246,246,0.7); min-height: 44px; display: flex; align-items: center;">שאלות נפוצות</a>
+        <a href="#" style="color: rgba(244,246,246,0.7); min-height: 44px; display: flex; align-items: center;">הסיפור שלנו</a>
+        <a href="LibiDiamonds Contact.dc.html" style="color: rgba(244,246,246,0.7); min-height: 44px; display: flex; align-items: center;">יצירת קשר</a>
+        <a href="#" style="color: rgba(244,246,246,0.7); min-height: 44px; display: flex; align-items: center;">משלוח והחזרות</a>
+      </div>
+      <div style="padding: 12px 0 0;">
+        <a href="tel:0508611888" dir="ltr" style="unicode-bidi: isolate; display: flex; align-items: center; justify-content: flex-end; min-height: 44px; color: #C9A96A; font-size: 17px; letter-spacing: 0.03em;">050-8611888</a>
+        <div style="font-size: 12.5px; color: rgba(244,246,246,0.55); text-align: start;">ייעוץ אישי בטלפון</div>
+        <a href="https://wa.me/972508611888" style="min-height: 44px; display: inline-flex; align-items: center; color: #C9A96A; font-size: 14px;"><span style="border-bottom: 1px solid rgba(201,169,106,0.42); padding-bottom: 3px;">או בוואטסאפ</span></a>
+      </div>
+    </footer>
+
+    <sc-if value="{{ sheetOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; justify-content: flex-end;">
+        <button type="button" aria-label="סגירה" onClick="{{ close }}" style="position: absolute; inset: 0; background: rgba(8,14,17,0.52); border: 0; padding: 0; cursor: pointer; animation: lbVeil 180ms ease-out;"></button>
+        <div style="position: relative; width: 393px; max-width: 100%; margin-inline: auto; max-height: 82vh; display: flex; flex-direction: column; background: #FFFFFF; animation: lbSheet 220ms cubic-bezier(0.22,1,0.36,1);">
+
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px 0 24px; height: 58px; border-bottom: 1px solid rgba(20,26,29,0.09); flex: 0 0 auto;">
+            <span style="font-size: 17px; font-weight: 400;">{{ sheetTitle }}</span>
+            <button type="button" aria-label="סגירה" onClick="{{ close }}" style="width: 44px; height: 44px; display: grid; place-items: center; background: none; border: 0; cursor: pointer;">
+              <span style="position: relative; width: 14px; height: 14px;">
+                <span style="position: absolute; inset-block: 50%; inset-inline: 0; height: 1px; background: #141A1D; transform: rotate(45deg);"></span>
+                <span style="position: absolute; inset-block: 50%; inset-inline: 0; height: 1px; background: #141A1D; transform: rotate(-45deg);"></span>
+              </span>
+            </button>
+          </div>
+
+          <div class="lb-scroll" style="flex: 1 1 auto; overflow-y: auto; overscroll-behavior: contain;">
+            <sc-if value="{{ isFilterSheet }}" hint-placeholder-val="{{ true }}">
+              <div style="padding: 4px 24px 20px;">
+                <sc-for list="{{ facets }}" as="facet" hint-placeholder-count="5">
+                  <div style="padding: 20px 0 4px; border-bottom: 1px solid rgba(20,26,29,0.07);">
+                    <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.06em; color: #795D26; margin-bottom: 13px;">{{ facet.label }}</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; padding-bottom: 18px;">
+                      <sc-for list="{{ facet.options }}" as="opt" hint-placeholder-count="4">
+                        <button type="button" onClick="{{ opt.onClick }}" style="{{ opt.style }}">
+                          <span>{{ opt.label }}</span>
+                          <span style="opacity: 0.5; font-size: 12px;">{{ opt.count }}</span>
+                        </button>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ isSortSheet }}" hint-placeholder-val="{{ false }}">
+              <div style="padding: 6px 24px 18px;">
+                <sc-for list="{{ sortOptions }}" as="opt" hint-placeholder-count="5">
+                  <button type="button" onClick="{{ opt.onClick }}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 56px; padding: 10px 0; background: none; border: 0; border-bottom: 1px solid rgba(20,26,29,0.07); color: #141A1D; font-family: inherit; text-align: start; cursor: pointer;">
+                    <span style="{{ opt.labelStyle }}">{{ opt.label }}</span>
+                    <span style="{{ opt.markStyle }}"></span>
+                  </button>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="flex: 0 0 auto; display: flex; align-items: center; gap: 14px; padding: 12px 24px calc(14px + env(safe-area-inset-bottom)); border-top: 1px solid rgba(20,26,29,0.09); background: #FFFFFF;">
+            <button type="button" onClick="{{ clearAll }}" style="min-height: 48px; padding: 0 4px; background: none; border: 0; color: #795D26; font-family: inherit; font-size: 14.5px; cursor: pointer;">נקה</button>
+            <button type="button" onClick="{{ close }}" style="flex: 1 1 auto; min-height: 54px; background: #141A1D; border: 0; color: #F4F6F6; font-family: inherit; font-size: 15.5px; letter-spacing: 0.01em; cursor: pointer;">{{ applyLabel }}</button>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:393,&quot;height&quot;:900},&quot;defaultDensity&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;שתיים בשורה&quot;,&quot;אחת בשורה&quot;],&quot;default&quot;:&quot;שתיים בשורה&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;תצוגה&quot;},&quot;perPage&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:8,&quot;min&quot;:4,&quot;max&quot;:18,&quot;step&quot;:2,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;תצוגה&quot;},&quot;showGuide&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;תצוגה&quot;}}">
+const GLYPH = {
+  round:    { w: 11, h: 11, r: '50%' },
+  oval:     { w: 8,  h: 12, r: '50%' },
+  emerald:  { w: 8,  h: 12, r: '1px' },
+  princess: { w: 11, h: 11, r: '1px' },
+  cushion:  { w: 11, h: 11, r: '3px' },
+  marquise: { w: 7,  h: 13, r: '50% / 14%' },
+  pear:     { w: 9,  h: 12, r: '50% 50% 50% 50% / 62% 62% 38% 38%' }
+};
+
+const SHAPES = [
+  ['round', 'עגול'], ['oval', 'אובל'], ['emerald', 'אמרלד'], ['princess', 'נסיכה'],
+  ['cushion', 'קושן'], ['marquise', 'מרקיזה'], ['pear', 'אגס']
+];
+const STONES = [['natural', 'טבעי'], ['lab', 'מעבדה']];
+const METALS = [['white', 'זהב לבן'], ['yellow', 'זהב צהוב'], ['rose', 'זהב ורוד']];
+const STYLES = [['solitaire', 'סוליטר'], ['halo', 'הילה'], ['three', 'שלוש אבנים'], ['pave', 'פאווה']];
+const CARATS = [['0-1', 'עד 1 קראט'], ['1-1.5', '1–1.5'], ['1.5-2', '1.5–2'], ['2+', '2 ומעלה']];
+const PRICES = [['0-12000', 'עד ₪12,000'], ['12000-18000', '₪12,000–18,000'], ['18000-25000', '₪18,000–25,000'], ['25000+', '₪25,000+']];
+
+const P = (img, title, cert, ct, color, clarity, price, shape, stone, metal, style) =>
+  ({ img: 'images/products/clean/' + img, title, cert, ct, color, clarity, price, shape, stone, metal, style });
+
+const DATA = [
+  P('ring-01-front.jpg',   'סוליטר קלאסי, זהב לבן 18K',        'GIA', 1.02, 'F', 'VS1',  14900, 'round',    'natural', 'white',  'solitaire'),
+  P('ring-02-front.jpg',   'הילה נסתרת, זהב לבן 18K',          'IGI', 1.50, 'G', 'VS2',  16400, 'oval',     'lab',     'white',  'halo'),
+  P('ring-03-front.jpg',   'שלוש אבנים, זהב צהוב 18K',         'GIA', 1.20, 'G', 'VS2',  21800, 'emerald',  'natural', 'yellow', 'three'),
+  P('ring-04-front.jpg',   'פאווה, זהב ורוד 18K',              'IGI', 1.00, 'F', 'VVS2', 12300, 'cushion',  'lab',     'rose',   'pave'),
+  P('ring-01-top.jpg',     'סוליטר, משבצת דקה, זהב לבן 18K',   'GIA', 0.90, 'E', 'VS1',  13200, 'round',    'natural', 'white',  'solitaire'),
+  P('ring-01-profile.jpg', 'סוליטר, פרופיל גבוה, זהב לבן 18K', 'IGI', 2.01, 'G', 'VS1',  19700, 'round',    'lab',     'white',  'solitaire'),
+  P('ring-02-front.jpg',   'הילה נסתרת, זהב צהוב 18K',         'GIA', 1.30, 'F', 'VS2',  24500, 'oval',     'natural', 'yellow', 'halo'),
+  P('ring-04-front.jpg',   'פאווה, זהב לבן 18K',               'IGI', 1.70, 'G', 'VS2',  17900, 'cushion',  'lab',     'white',  'pave'),
+  P('ring-03-front.jpg',   'שלוש אבנים, זהב לבן 18K',          'IGI', 2.10, 'F', 'VS1',  23400, 'emerald',  'lab',     'white',  'three'),
+  P('ring-01-front.jpg',   'סוליטר, זהב צהוב 18K',             'GIA', 0.70, 'F', 'VS2',   9800, 'round',    'natural', 'yellow', 'solitaire'),
+  P('ring-02-front.jpg',   'הילה, זהב ורוד 18K',               'IGI', 1.05, 'G', 'VS2',  11900, 'oval',     'lab',     'rose',   'halo'),
+  P('ring-01-profile.jpg', 'סוליטר, פרופיל גבוה, זהב צהוב 18K','GIA', 1.55, 'E', 'VVS2', 32600, 'round',    'natural', 'yellow', 'solitaire'),
+  P('ring-04-front.jpg',   'פאווה עדינה, זהב לבן 18K',         'GIA', 0.85, 'F', 'VS1',  13800, 'princess', 'natural', 'white',  'pave'),
+  P('ring-01-top.jpg',     'סוליטר, משבצת דקה, זהב ורוד 18K',  'IGI', 1.25, 'G', 'VS1',  14200, 'round',    'lab',     'rose',   'solitaire'),
+  P('ring-03-front.jpg',   'שלוש אבנים, זהב צהוב 18K',         'IGI', 2.60, 'G', 'VS2',  26900, 'marquise', 'lab',     'yellow', 'three'),
+  P('ring-02-front.jpg',   'הילה נסתרת, זהב לבן 18K',          'GIA', 1.80, 'F', 'VS2',  38400, 'pear',     'natural', 'white',  'halo'),
+  P('ring-01-front.jpg',   'סוליטר קלאסי, זהב לבן 18K',        'IGI', 3.02, 'G', 'VS1',  27500, 'round',    'lab',     'white',  'solitaire'),
+  P('ring-04-front.jpg',   'פאווה, זהב צהוב 18K',              'GIA', 1.10, 'E', 'VS1',  19400, 'cushion',  'natural', 'yellow', 'pave')
+];
+
+const SORTS = [
+  ['rec', 'מומלץ'],
+  ['low', 'מחיר: מהנמוך לגבוה'],
+  ['high', 'מחיר: מהגבוה לנמוך'],
+  ['ct', 'משקל קראט'],
+  ['new', 'חדש במלאי']
+];
+
+const LABELS = {};
+[SHAPES, STONES, METALS, STYLES, CARATS, PRICES].forEach(g => g.forEach(([v, l]) => { LABELS[v] = l; }));
+
+const inCarat = (ct, band) =>
+  band === '0-1' ? ct < 1 : band === '1-1.5' ? ct >= 1 && ct < 1.5 : band === '1.5-2' ? ct >= 1.5 && ct < 2 : ct >= 2;
+const inPrice = (p, band) =>
+  band === '0-12000' ? p < 12000 : band === '12000-18000' ? p >= 12000 && p < 18000 : band === '18000-25000' ? p >= 18000 && p < 25000 : p >= 25000;
+
+class Component extends DCLogic {
+  state = {
+    sheet: null,
+    shown: 0,
+    sort: 'rec',
+    dense: 0,
+    f: { shape: [], stone: [], metal: [], style: [], carat: [], price: [] }
+  };
+
+  get perPage() { return this.props.perPage ?? 8; }
+  get dense() { return this.state.dense || (this.props.defaultDensity === 'אחת בשורה' ? 1 : 2); }
+  get shown() { return this.state.shown || this.perPage; }
+
+  matches(p, f, skip) {
+    const ok = (k, test) => k === skip || !f[k].length || f[k].some(test);
+    return ok('shape', v => v === p.shape)
+      && ok('stone', v => v === p.stone)
+      && ok('metal', v => v === p.metal)
+      && ok('style', v => v === p.style)
+      && ok('carat', v => inCarat(p.ct, v))
+      && ok('price', v => inPrice(p.price, v));
+  }
+
+  toggle(group, value) {
+    this.setState(s => {
+      const cur = s.f[group];
+      const next = cur.includes(value) ? cur.filter(v => v !== value) : cur.concat(value);
+      return { f: Object.assign({}, s.f, { [group]: next }), shown: this.perPage };
+    });
+  }
+
+  only(group, value) {
+    this.setState(s => ({ f: Object.assign({}, s.f, { [group]: [value] }), shown: this.perPage, sheet: null }));
+  }
+
+  chipStyle(active, dimmed) {
+    return {
+      display: 'inline-flex', alignItems: 'center', gap: '7px', minHeight: '44px', padding: '0 14px',
+      background: active ? '#141A1D' : '#FFFFFF',
+      border: '1px solid ' + (active ? '#141A1D' : 'rgba(20,26,29,0.14)'),
+      color: active ? '#F4F6F6' : '#141A1D',
+      opacity: dimmed ? 0.36 : 1,
+      fontFamily: 'inherit', fontSize: '14px', fontWeight: 300,
+      cursor: 'pointer', transition: 'border-color 140ms ease, background 140ms ease'
+    };
+  }
+
+  renderVals() {
+    const f = this.state.f;
+    const glyph = (shape, color) => {
+      const g = GLYPH[shape];
+      return { flex: '0 0 auto', width: g.w + 'px', height: g.h + 'px', border: '1px solid ' + color, borderRadius: g.r };
+    };
+
+    const all = DATA.map((p, i) => Object.assign({}, p, {
+      spec: p.cert + ' · ' + p.ct.toFixed(2) + 'ct · ' + p.color + ' · ' + p.clarity,
+      priceLabel: '₪' + p.price.toLocaleString('en-US'),
+      glyph: glyph(p.shape, '#9AA1A4'),
+      seq: i
+    }));
+
+    let list = all.filter(p => this.matches(p, f));
+    const sort = this.state.sort;
+    if (sort === 'low') list = list.slice().sort((a, b) => a.price - b.price);
+    else if (sort === 'high') list = list.slice().sort((a, b) => b.price - a.price);
+    else if (sort === 'ct') list = list.slice().sort((a, b) => b.ct - a.ct);
+    else if (sort === 'new') list = list.slice().sort((a, b) => b.seq - a.seq);
+
+    const total = list.length;
+    const shown = Math.min(this.shown, total);
+    const visible = list.slice(0, shown);
+    const dense = this.dense;
+    const leadCount = dense === 1 ? 2 : 4;
+    const showGuideBreak = (this.props.showGuide ?? true) && total > leadCount;
+
+    const grid = pad => ({
+      display: 'grid',
+      gridTemplateColumns: dense === 1 ? '1fr' : '1fr 1fr',
+      gap: dense === 1 ? '34px' : '28px 14px',
+      padding: pad
+    });
+
+    const count = (group, value) => {
+      const probe = Object.assign({}, f, { [group]: [value] });
+      return all.filter(p => this.matches(p, probe, null)).length;
+    };
+
+    const facet = (key, label, defs) => ({
+      key, label,
+      options: defs.map(([value, optLabel]) => {
+        const n = count(key, value);
+        const active = f[key].includes(value);
+        return {
+          label: optLabel, count: n, active,
+          style: this.chipStyle(active, n === 0 && !active),
+          onClick: () => this.toggle(key, value)
+        };
+      })
+    });
+
+    const pills = [];
+    Object.keys(f).forEach(k => f[k].forEach(v => {
+      pills.push({ label: LABELS[v], onClick: () => this.toggle(k, v) });
+    }));
+
+    const remaining = total - shown;
+
+    return {
+      lead: visible.slice(0, leadCount),
+      rest: visible.slice(leadCount),
+      gridStyle: grid('0 24px'),
+      restGridStyle: grid(showGuideBreak ? '30px 24px 0' : '28px 24px 0'),
+      imgStyle: {
+        display: 'block', width: '100%', aspectRatio: dense === 1 ? '4 / 5' : '1 / 1',
+        objectFit: 'cover', background: '#FFFFFF'
+      },
+      titleStyle: {
+        fontSize: dense === 1 ? '16.5px' : '14.5px', fontWeight: 300, lineHeight: 1.45,
+        paddingTop: dense === 1 ? '14px' : '11px'
+      },
+      countLabel: String(total),
+      isEmpty: total === 0,
+      hasMore: remaining > 0,
+      moreLabel: 'טען עוד ' + Math.min(remaining, this.perPage),
+      showGuideBreak,
+
+      hasFilters: pills.length > 0,
+      filterCount: pills.length,
+      pills,
+      quick: [['', 'הכל']].concat(STYLES).map(([value, label]) => {
+        const active = value ? f.style.includes(value) : f.style.length === 0;
+        return {
+          label,
+          onClick: () => value ? this.toggle('style', value) : this.setState(s => ({ f: { ...s.f, style: [] }, shown: this.perPage })),
+          style: {
+            flex: '0 0 auto', minHeight: '44px', padding: 0, background: 'none', border: 0,
+            borderBottom: '1px solid ' + (active ? '#C9A96A' : 'transparent'),
+            color: active ? '#141A1D' : '#7C8488',
+            fontFamily: 'inherit', fontSize: '13.5px', fontWeight: active ? 400 : 300,
+            letterSpacing: '0.02em', whiteSpace: 'nowrap', cursor: 'pointer',
+            transition: 'color 160ms ease, border-color 160ms ease'
+          }
+        };
+      }),
+      clearAll: () => this.setState({ f: { shape: [], stone: [], metal: [], style: [], carat: [], price: [] }, shown: this.perPage }),
+      loadMore: () => this.setState({ shown: shown + this.perPage }),
+
+      shapeRail: SHAPES.map(([value, label]) => {
+        const active = f.shape.includes(value);
+        return {
+          label, onClick: () => this.toggle('shape', value),
+          glyph: glyph(value, active ? '#F4F6F6' : '#697175'),
+          style: {
+            flex: '0 0 auto', width: '76px', scrollSnapAlign: 'start',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '9px',
+            padding: '15px 0 13px',
+            background: active ? '#141A1D' : '#FFFFFF',
+            border: '1px solid ' + (active ? '#141A1D' : 'rgba(20,26,29,0.12)'),
+            color: active ? '#F4F6F6' : '#141A1D',
+            fontFamily: 'inherit', cursor: 'pointer',
+            transition: 'background 140ms ease, border-color 140ms ease'
+          }
+        };
+      }),
+
+      sortLabel: SORTS.find(s => s[0] === sort)[1],
+      sortOptions: SORTS.map(([value, label]) => {
+        const active = value === sort;
+        return {
+          label, active,
+          labelStyle: { fontSize: '15.5px', fontWeight: active ? 400 : 300 },
+          markStyle: {
+            width: '7px', height: '7px', borderRadius: '50%',
+            background: active ? '#795D26' : 'transparent',
+            border: active ? 'none' : '1px solid rgba(20,26,29,0.18)'
+          },
+          onClick: () => this.setState({ sort: value, sheet: null, shown: this.perPage })
+        };
+      }),
+
+      sheetOpen: !!this.state.sheet,
+      isFilterSheet: this.state.sheet === 'filter',
+      isSortSheet: this.state.sheet === 'sort',
+      sheetTitle: this.state.sheet === 'sort' ? 'מיון' : 'סינון',
+      applyLabel: this.state.sheet === 'sort' ? 'סגירה' : (total === 0 ? 'אין תוצאות' : total === 1 ? 'הצג דגם אחד' : 'הצג ' + total + ' דגמים'),
+      openFilter: () => this.setState({ sheet: 'filter' }),
+      openSort: () => this.setState({ sheet: 'sort' }),
+      close: () => this.setState({ sheet: null }),
+
+      facets: [
+        facet('shape', 'צורת האבן', SHAPES),
+        facet('stone', 'סוג האבן', STONES),
+        facet('metal', 'מתכת', METALS),
+        facet('style', 'סגנון המשבצת', STYLES),
+        facet('carat', 'משקל', CARATS),
+        facet('price', 'תקציב', PRICES)
+      ],
+
+      styleGuide: [
+        { label: 'סוליטר', img: 'images/products/clean/ring-01-front.jpg', alt: 'טבעת סוליטר בזהב לבן, שיבוץ שש שיניים', onClick: () => this.only('style', 'solitaire') },
+        { label: 'פאווה', img: 'images/products/clean/ring-02-front.jpg', alt: 'טבעת סוליטר עם משבצת פאווה בזהב לבן', onClick: () => this.only('style', 'pave') }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

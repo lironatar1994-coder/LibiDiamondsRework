@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #1A2529; }
+  * { box-sizing: border-box; }
+  a { color: #795D26; text-decoration: none; }
+  a:hover { color: #141A1D; }
+  ::selection { background: #C9A96A; color: #141A1D; }
+  .lb-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+  .lb-scroll::-webkit-scrollbar { display: none; }
+</style>
+</helmet>
+
+<div dir="rtl" lang="he" style="font-family: Heebo, system-ui, sans-serif; min-height: 100vh; display: flex; justify-content: center; background: #1A2529;">
+  <div style="width: 393px; max-width: 100%; background: #F0F2F3; color: #141A1D; position: relative; overflow: clip; overflow-clip-margin: 0px;">
+
+    <div style="background: #141A1D; color: #C9A96A; font-size: 10.5px; letter-spacing: 0.03em; text-align: center; padding: 9px 16px;">תעודת <span dir="ltr" style="unicode-bidi: isolate;">GIA</span> או <span dir="ltr" style="unicode-bidi: isolate;">IGI</span> לכל אבן</div>
+
+    <header style="position: sticky; top: 0; z-index: 40; background: rgba(240,242,243,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(20,26,29,0.10); display: grid; grid-template-columns: 44px 1fr auto; align-items: center; height: 58px; padding: 0 12px 0 10px;">
+      <button type="button" aria-label="תפריט" style="width: 44px; height: 44px; display: grid; place-items: center; background: none; border: 0; padding: 0; cursor: pointer;">
+        <span style="display: block; width: 20px; height: 1px; background: #141A1D; box-shadow: 0 6px 0 #141A1D, 0 -6px 0 #141A1D;"></span>
+      </button>
+      <a href="LibiDiamonds Mobile Home v2.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 3px; color: #141A1D;">
+        <span style="font-size: 19px; font-weight: 300; letter-spacing: 0.02em; line-height: 1;">ליבי</span>
+        <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.34em; color: #697175; line-height: 1;">DIAMONDS</span>
+      </a>
+      <a href="tel:0508611888" style="min-width: 44px; height: 44px; display: flex; align-items: center; justify-content: flex-end; color: #141A1D; font-size: 13px;">שיחה</a>
+    </header>
+
+    <section style="padding: 28px 22px 22px;">
+      <h1 style="font-size: 32px; font-weight: 200; line-height: 1.14; letter-spacing: -0.025em; margin: 0 0 12px;">חיפוש יהלום</h1>
+      <div style="width: 46px; height: 1px; background: #C9A96A; margin-bottom: 14px;"></div>
+      <p style="font-size: 15.5px; font-weight: 300; line-height: 1.6; color: #454E52; margin: 0; text-wrap: pretty;">המלאי הזמין כרגע. כל אבן עם תעודה ומספר לבדיקה.</p>
+    </section>
+
+    <section style="padding: 0 0 6px;">
+      <div style="padding: 0 22px 9px;">
+        <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.05em; color: #795D26;">סוג האבן</span>
+      </div>
+      <div data-group="origin" onClick="{{ pick }}" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 22px;">
+        <button type="button" data-group="origin" data-value="all" style="min-height: 46px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14.5px; cursor: pointer;">הכל</button>
+        <button type="button" data-group="origin" data-value="natural" style="min-height: 46px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14.5px; cursor: pointer;">טבעי</button>
+        <button type="button" data-group="origin" data-value="lab" style="min-height: 46px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14.5px; cursor: pointer;">מעבדה</button>
+      </div>
+    </section>
+
+    <section style="padding: 18px 0 6px;">
+      <div style="padding: 0 22px 9px;">
+        <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.05em; color: #795D26;">צורה</span>
+      </div>
+      <div class="lb-scroll" data-group="shape" onClick="{{ pick }}" style="display: flex; gap: 8px; overflow-x: auto; padding: 0 22px; mask-image: linear-gradient(to left, #000 0%, #000 88%, rgba(0,0,0,0.12) 100%); -webkit-mask-image: linear-gradient(to left, #000 0%, #000 88%, rgba(0,0,0,0.12) 100%);">
+        <button type="button" data-group="shape" data-value="all" style="flex: 0 0 auto; min-width: 56px; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">הכל</button>
+        <button type="button" data-group="shape" data-value="עגול" style="flex: 0 0 auto; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">עגול</button>
+        <button type="button" data-group="shape" data-value="אובל" style="flex: 0 0 auto; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">אובל</button>
+        <button type="button" data-group="shape" data-value="אמרלד" style="flex: 0 0 auto; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">אמרלד</button>
+        <button type="button" data-group="shape" data-value="נסיכה" style="flex: 0 0 auto; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">נסיכה</button>
+        <button type="button" data-group="shape" data-value="מרקיזה" style="flex: 0 0 auto; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">מרקיזה</button>
+        <button type="button" data-group="shape" data-value="קושן" style="flex: 0 0 auto; min-height: 46px; padding: 0 14px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 14px; cursor: pointer;">קושן</button>
+      </div>
+    </section>
+
+    <section style="padding: 18px 22px 6px;">
+      <div style="padding-bottom: 9px;">
+        <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.05em; color: #795D26;">משקל</span>
+      </div>
+      <div data-group="carat" onClick="{{ pick }}" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+        <button type="button" data-group="carat" data-value="all" style="min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">הכל</button>
+        <button type="button" data-group="carat" data-value="0-0.7" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">עד 0.70</button>
+        <button type="button" data-group="carat" data-value="0.7-1" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">0.70–1.00</button>
+        <button type="button" data-group="carat" data-value="1-1.5" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">1.00–1.50</button>
+        <button type="button" data-group="carat" data-value="1.5-2" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">1.50–2.00</button>
+        <button type="button" data-group="carat" data-value="2-99" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">2.00 +</button>
+      </div>
+    </section>
+
+    <section style="padding: 18px 22px 8px;">
+      <div style="padding-bottom: 9px;">
+        <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.05em; color: #795D26;">תקציב</span>
+      </div>
+      <div data-group="price" onClick="{{ pick }}" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <button type="button" data-group="price" data-value="all" style="min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">הכל</button>
+        <button type="button" data-group="price" data-value="0-10000" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">עד ₪10,000</button>
+        <button type="button" data-group="price" data-value="10000-20000" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">₪10,000–20,000</button>
+        <button type="button" data-group="price" data-value="20000-40000" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">₪20,000–40,000</button>
+        <button type="button" data-group="price" data-value="40000-999999" dir="ltr" style="unicode-bidi: isolate; min-height: 44px; border: 1px solid rgba(20,26,29,0.16); background: #F9FAFA; color: #141A1D; font-family: inherit; font-size: 13.5px; cursor: pointer;">₪40,000 ומעלה</button>
+      </div>
+    </section>
+
+    <div style="position: sticky; top: 58px; z-index: 30; background: #141A1D; color: #F0F2F3; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; min-height: 48px; margin-top: 18px;">
+      <span style="font-size: 14px; font-weight: 300;">{{ countLabel }}</span>
+      <button type="button" onClick="{{ toggleSort }}" style="min-height: 48px; display: flex; align-items: center; gap: 7px; background: none; border: 0; padding: 0; color: #C9A96A; font-family: inherit; font-size: 13px; cursor: pointer;">{{ sortLabel }}</button>
+    </div>
+
+    <section style="padding: 0 22px 32px;">
+      <div style="display: flex; flex-direction: column;">
+        <sc-for list="{{ results }}" as="stone" hint-placeholder-count="6">
+          <a href="LibiDiamonds Product Page.dc.html" style="display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: center; padding: 17px 0; border-bottom: 1px solid rgba(20,26,29,0.10); color: #141A1D;">
+            <div>
+              <div style="font-size: 16.5px; font-weight: 300; margin-bottom: 6px;">{{ stone.title }}</div>
+              <div dir="ltr" style="unicode-bidi: isolate; text-align: right; font-family: ui-monospace, Menlo, monospace; font-size: 12px; letter-spacing: 0.02em; color: #535C60;">{{ stone.spec }}</div>
+            </div>
+            <div dir="ltr" style="unicode-bidi: isolate; text-align: left; font-size: 16px; font-weight: 400;">{{ stone.price }}</div>
+          </a>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+        <div style="padding: 40px 0 8px; text-align: center;">
+          <div style="font-size: 16.5px; font-weight: 300; margin-bottom: 8px;">אין אבן שעונה על הסינון הזה</div>
+          <div style="font-size: 14.5px; font-weight: 300; line-height: 1.6; color: #454E52; margin-bottom: 20px;">אפשר להרחיב את הסינון, או לפנות אלינו — חלק מהמלאי לא מופיע כאן.</div>
+          <button type="button" onClick="{{ reset }}" style="min-height: 48px; padding: 0 22px; border: 1px solid rgba(20,26,29,0.28); background: none; color: #141A1D; font-family: inherit; font-size: 14.5px; cursor: pointer;">לאיפוס הסינון</button>
+        </div>
+      </sc-if>
+    </section>
+
+    <section style="background: #17313A; color: #F0F2F3; padding: 32px 22px 36px;">
+      <h2 style="font-size: 24px; font-weight: 200; line-height: 1.22; letter-spacing: -0.02em; margin: 0 0 16px; text-wrap: pretty;">מחפשים משהו מסוים?</h2>
+      <div style="width: 46px; height: 1px; background: #C9A96A; margin-bottom: 18px;"></div>
+      <p style="font-size: 15.5px; font-weight: 300; line-height: 1.66; color: rgba(239,245,246,0.78); margin: 0 0 22px; text-wrap: pretty;">המלאי מתעדכן. אם האבן שאתם מחפשים לא כאן, נאתר אותה.</p>
+      <a href="https://wa.me/972508611888" style="display: flex; align-items: center; justify-content: center; height: 54px; background: #C9A96A; color: #141A1D; font-size: 15.5px; font-weight: 500;">וואטסאפ</a>
+    </section>
+
+    <footer style="background: #0B0E10; color: rgba(239,242,242,0.7); padding: 32px 22px 26px;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 3px; margin-bottom: 22px;">
+        <span style="font-size: 19px; font-weight: 300; color: #F0F2F3;">ליבי</span>
+        <span dir="ltr" style="font-size: 7.5px; letter-spacing: 0.34em; color: #C9A96A;">DIAMONDS</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; font-size: 14px; font-weight: 300; padding-bottom: 18px; border-bottom: 1px solid rgba(239,242,242,0.12);">
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">מדריך היהלומים</a>
+        <a href="LibiDiamonds Diamond Search.dc.html" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">חיפוש יהלום</a>
+        <a href="LibiDiamonds FAQ.dc.html" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">שאלות נפוצות</a>
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">הסיפור שלנו</a>
+        <a href="LibiDiamonds Contact.dc.html" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">יצירת קשר</a>
+        <a href="#" style="color: rgba(239,242,242,0.7); min-height: 44px; display: flex; align-items: center;">משלוח והחזרות</a>
+      </div>
+      <div style="padding: 14px 0 0;">
+        <a href="tel:0508611888" dir="ltr" style="unicode-bidi: isolate; display: flex; align-items: center; justify-content: flex-end; min-height: 44px; color: #C9A96A; font-size: 17px; letter-spacing: 0.03em;">050-8611888</a>
+        <div style="font-size: 12.5px; color: rgba(239,242,242,0.55); text-align: start;">ייעוץ אישי בטלפון</div>
+        <a href="https://wa.me/972508611888" style="min-height: 44px; display: inline-flex; align-items: center; color: #C9A96A; font-size: 14px;"><span style="border-bottom: 1px solid rgba(201,169,106,0.42); padding-bottom: 3px;">או בוואטסאפ</span></a>
+      </div>
+      <div style="padding-top: 10px; display: flex; gap: 18px; font-size: 12.5px;">
+        <a href="#" style="color: rgba(239,242,242,0.68); min-height: 44px; display: flex; align-items: center;">הצהרת נגישות</a>
+        <a href="#" style="color: rgba(239,242,242,0.68); min-height: 44px; display: flex; align-items: center;">תקנון</a>
+        <a href="#" style="color: rgba(239,242,242,0.68); min-height: 44px; display: flex; align-items: center;">פרטיות</a>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:393,&quot;height&quot;:880}}">
+// Sample inventory. Replace wholesale with the real stock list — same field names.
+const STOCK = [
+  { shape: 'עגול',   ct: 0.51, color: 'E', clarity: 'VS1',  cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 7400 },
+  { shape: 'עגול',   ct: 0.72, color: 'F', clarity: 'VS2',  cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 10900 },
+  { shape: 'עגול',   ct: 1.02, color: 'F', clarity: 'VS1',  cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 14900 },
+  { shape: 'עגול',   ct: 1.21, color: 'G', clarity: 'VVS2', cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 19800 },
+  { shape: 'עגול',   ct: 1.53, color: 'E', clarity: 'VS1',  cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 27500 },
+  { shape: 'עגול',   ct: 2.04, color: 'F', clarity: 'VS2',  cut: 'Very Good', origin: 'natural', lab: 'GIA', price: 46000 },
+  { shape: 'אובל',   ct: 0.91, color: 'G', clarity: 'VS1',  cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 11400 },
+  { shape: 'אובל',   ct: 1.20, color: 'F', clarity: 'VS2',  cut: 'Excellent', origin: 'natural', lab: 'IGI', price: 16700 },
+  { shape: 'אמרלד',  ct: 1.05, color: 'D', clarity: 'VVS1', cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 21300 },
+  { shape: 'נסיכה',  ct: 0.83, color: 'F', clarity: 'VS1',  cut: 'Excellent', origin: 'natural', lab: 'GIA', price: 9800 },
+  { shape: 'קושן',   ct: 1.31, color: 'G', clarity: 'VS2',  cut: 'Excellent', origin: 'natural', lab: 'IGI', price: 17600 },
+  { shape: 'מרקיזה', ct: 1.10, color: 'H', clarity: 'VS1',  cut: 'Very Good', origin: 'natural', lab: 'GIA', price: 12200 },
+  { shape: 'עגול',   ct: 0.52, color: 'E', clarity: 'VVS2', cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 4200 },
+  { shape: 'עגול',   ct: 0.71, color: 'F', clarity: 'VS1',  cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 5300 },
+  { shape: 'עגול',   ct: 1.01, color: 'F', clarity: 'VS1',  cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 6900 },
+  { shape: 'עגול',   ct: 1.52, color: 'E', clarity: 'VVS2', cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 11200 },
+  { shape: 'עגול',   ct: 2.11, color: 'D', clarity: 'VS1',  cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 16500 },
+  { shape: 'אובל',   ct: 1.24, color: 'F', clarity: 'VS2',  cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 8400 },
+  { shape: 'אמרלד',  ct: 1.60, color: 'E', clarity: 'VVS2', cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 12900 },
+  { shape: 'נסיכה',  ct: 1.03, color: 'G', clarity: 'VS1',  cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 6400 },
+  { shape: 'קושן',   ct: 2.02, color: 'F', clarity: 'VS2',  cut: 'Excellent', origin: 'lab',     lab: 'IGI', price: 15100 },
+  { shape: 'מרקיזה', ct: 0.95, color: 'G', clarity: 'VS1',  cut: 'Very Good', origin: 'lab',     lab: 'IGI', price: 5900 },
+];
+
+const SEL = { background: '#141A1D', color: '#F0F2F3', borderColor: '#141A1D' };
+const IDLE = { background: '#F9FAFA', color: '#141A1D', borderColor: 'rgba(20,26,29,0.16)' };
+const DEFAULTS = { origin: 'all', shape: 'all', carat: 'all', price: 'all' };
+
+class Component extends DCLogic {
+  state = Object.assign({}, DEFAULTS, { sort: 'price-asc' });
+
+  componentDidMount() { this.sync(); }
+  componentDidUpdate() { this.sync(); }
+
+  sync() {
+    document.querySelectorAll('button[data-group][data-value]').forEach(el => {
+      const on = this.state[el.dataset.group] === el.dataset.value;
+      const s = on ? SEL : IDLE;
+      el.style.background = s.background;
+      el.style.color = s.color;
+      el.style.borderColor = s.borderColor;
+      el.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
+  renderVals() {
+    const { origin, shape, carat, price, sort } = this.state;
+    const band = v => v.split('-').map(Number);
+    const ils = n => '₪' + n.toLocaleString('en-US');
+
+    let rows = STOCK.filter(s => {
+      if (origin !== 'all' && s.origin !== origin) return false;
+      if (shape !== 'all' && s.shape !== shape) return false;
+      if (carat !== 'all') { const [a, b] = band(carat); if (s.ct < a || s.ct >= b) return false; }
+      if (price !== 'all') { const [a, b] = band(price); if (s.price < a || s.price > b) return false; }
+      return true;
+    });
+
+    rows = rows.slice().sort((a, b) =>
+      sort === 'price-asc' ? a.price - b.price : b.ct - a.ct);
+
+    const results = rows.map(s => ({
+      title: s.shape + ' · ' + s.ct.toFixed(2) + ' ct',
+      spec: s.lab + ' · ' + s.color + ' · ' + s.clarity + ' · ' + s.cut,
+      price: ils(s.price)
+    }));
+
+    const n = results.length;
+    return {
+      results,
+      isEmpty: n === 0,
+      countLabel: n === STOCK.length ? n + ' אבנים במלאי'
+        : n === 1 ? 'אבן אחת' : n + ' אבנים',
+      sortLabel: sort === 'price-asc' ? 'לפי מחיר' : 'לפי משקל',
+      toggleSort: () => this.setState(s => ({ sort: s.sort === 'price-asc' ? 'ct-desc' : 'price-asc' })),
+      reset: () => this.setState(Object.assign({}, DEFAULTS)),
+      pick: e => {
+        const btn = e.target.closest('button[data-group][data-value]');
+        if (!btn) return;
+        this.setState({ [btn.dataset.group]: btn.dataset.value });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+import type { MetadataRoute } from "next";
+import { categories, products } from "@/data/catalog";
+import { SITE } from "@/lib/site";
+export default function sitemap(): MetadataRoute.Sitemap { const now = new Date(); const staticPaths = ["", "/diamond-search", "/faq", "/contact", "/about", "/shipping-returns", "/accessibility", "/terms", "/privacy"]; return [...staticPaths.map((path) => ({ url: `${SITE.url}${path}`, lastModified: now, changeFrequency: path === "" ? "weekly" as const : "monthly" as const, priority: path === "" ? 1 : 0.6 })), ...categories.map((item) => ({ url: `${SITE.url}/collections/${item.slug}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 })), ...products.map((item) => ({ url: `${SITE.url}/product/${item.slug}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.9 }))]; }

@@ -28,7 +28,7 @@ export function SiteHeader() {
   return (
     <>
       <a className="skip-link" href="#main-content">דלגו לתוכן הראשי</a>
-      <div className="announcement">פגישת ייעוץ אישית · בתיאום מראש</div>
+      <div className="announcement">תעודת GIA או IGI לכל אבן מרכזית · פגישה בתיאום מראש</div>
       <header className="site-header">
         <div className="header-inner">
           <button className="icon-button mobile-only" type="button" onClick={() => setOpen(true)} aria-label="פתיחת תפריט" aria-expanded={open}>

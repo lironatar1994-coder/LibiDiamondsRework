@@ -14,6 +14,12 @@ export interface Product {
   metals: Metal[];
   carats: { label: string; price: number }[];
   sizes?: string[];
+  /**
+   * v4 card spec line, e.g. "GIA · 1.02ct · F · VS1".
+   * Rendered LTR-isolated above the price. Left undefined until real
+   * certified stone data is available - never fill this with an estimate.
+   */
+  stoneSpec?: string;
   specs: { label: string; value: string }[];
   featured?: boolean;
 }
